@@ -4,74 +4,86 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="header">
-      <div class="logo">
-        <a class="logo__link">
-          <img class="logo__image" src="http://placehold.it/150x100" alt="Кэт энерджи">
-        </a>
-        <a class="logo__link">
-          <p class="logo__title"class="">Cat Energy</p>
-        </a>
+      <div class="container">
+        <div class="logo">
+          <a class="logo__link">
+            <img class="logo__image" src="img/logo-mobile.svg" width="192" height="40" alt="Кэт энерджи">
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__burger" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="catalog.html">Католог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <button class="main-nav__burger" type="button">Открыть меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Главная</a></li>
-          <li class="main-nav__item"><a href="catalog.html">Католог продукции</a></li>
-          <li class="main-nav__item"><a href="form.html">Подбор программы</a></li>
-        </ul>
-      </nav>
     </header>
 
-    <main class="main">
+    <main class="page-main">
       <h1 class="visually-hidden">Магазин "Кэт энерджи"</h1>
-
-      <section class="promo">
-        <h2 class="promo__title">
-          Функциональное питание для котов
-        </h2>
-        <p class="promo__slogan">
-          Занялся собой? Займись котом!
-        </p>
-        <button class="btn promo__btn" type="button">Подобрать программу</button>
-      </section>
-
-      <section class="programs-list">
-        <h2 class="visually-hidden">Программы "Кэт энерджи"</h2>
-        <div class="programs__item">
-          <h3 class="programs__item-title">
-            Похудение
-          </h3>
-          <p class="programs__item-info">
-            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+      <div class="container">
+        <section class="promo">
+          <h2 class="promo__title">
+            Функциональное питание для котов
+          </h2>
+          <p class="promo__slogan">
+            Занялся собой? Займись котом!
           </p>
-          <a class="programs__item-link" href="#">Каталог Slim</a>
-        </div>
-        <div class="programs__item">
-          <h3 class="programs__item-title">
-            Набор массы
-          </h3>
-          <p class="programs__item-info">
-            Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-          </p>
-          <a class="programs__item-link" href="#">Каталог Pro</a>
-        </div>
-      </section>
+          <img class="promo__img" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Cat Energy Pro 1000 г">
+          <button class="btn promo__btn" type="button">Подобрать программу</button>
+        </section>
 
-      <section class="instructions">
-        <h2 class="instructions__title">
-          Как это работает?
-        </h2>
-        <ul class="instructions__list">
-          <li class="instructions__item">Функциональное питание содержит только полезные питательные вещевтва</li>
-          <li class="instructions__item">Выпускается в виду порошка, который нужно лишь залить кипятком и готово.</li>
-          <li class="instructions__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
-          <li class="instructions__item">Уже через месяц насдаждайтесь измениями к лучшему вашего питомца!</li>
-        </ul>
-      </section>
+        <section class="programs">
+          <h2 class="visually-hidden">Программы "Кэт энерджи"</h2>
+          <ul class="progams__list">
+            <li class="programs__item">
+              <h3 class="programs__item-title">
+                Похудение
+              </h3>
+              <p class="programs__item-info">
+                Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+              </p>
+              <a class="programs__item-link" href="#">Каталог Slim</a>
+            </li>
+            <li class="programs__item">
+              <h3 class="programs__item-title">
+                Набор массы
+              </h3>
+              <p class="programs__item-info">
+                Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+              </p>
+              <a class="programs__item-link" href="#">Каталог Pro</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="instructions">
+          <h2 class="instructions__title">
+            Как это работает?
+          </h2>
+          <ul class="instructions__list">
+            <li class="instructions__item">Функциональное питание содержит только полезные питательные вещевтва</li>
+            <li class="instructions__item">Выпускается в виду порошка, который нужно лишь залить кипятком и готово.</li>
+            <li class="instructions__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
+            <li class="instructions__item">Уже через месяц насдаждайтесь измениями к лучшему вашего питомца!</li>
+          </ul>
+        </section>
+      </div>
 
       <section class="demo">
         <h2 class="demo__title">Живой пример</h2>
@@ -91,7 +103,10 @@
             Затраты на питание: 15 000 руб.
           </p>
         </div>
-        <div class="demo__img"></div>
+        <div class="demo__img">
+          <div class="demo__img-before"></div>
+          <div class="demo__img-after"></div>
+        </div>
         <div class="demo__btn">
           <button class="btn__result btn__result--before" type="button" name="button">Было</button>
           <div class="demo__bar">
@@ -105,52 +120,54 @@
     <footer class="footer">
       <section class="footer__map-contacts">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <div class="contacts">
+        <div class="contacts-main">
           <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
-          <div class="contacts__adress">
-            <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          </div>
+          <p class="contacts__adress">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </p>
         </div>
         <div class="map">
-          <img class="map__image" src="http://placehold.it/150x100" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <img class="map__image" src="img/bg-map-mobile@1x.png" height="360" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </div>
+
       </section>
-
-      <div class="footer__logo">
-        <a class="logo__link">
-          <p class="logo__title"class="">Cat Energy</p>
-        </a>
-      </div>
-
-      <div class="footer__socials">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <div class="socials">
-          <ul class="socials__list">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="#">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">
-                <span class="visually-hidden">Инстаграм</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
-                <span class="visually-hidden">Фейсбук</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer__copyright">
-        <div class="copyright">
-          <a class="copyright__link" href="#">HTML Academy</a>
-          <a class="copyright__logo" href="#">
-            <img src="http://placehold.it/150x100" alt="HTML Academy">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <a class="logo__link">
+            <img class="logo__img" src="img/logo-footer.svg" alt="Cat Energy">
           </a>
+        </div>
+
+        <div class="footer__socials">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <div class="socials">
+            <ul class="socials__list">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="#">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#">
+                  <span class="visually-hidden">Инстаграм</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#">
+                  <span class="visually-hidden">Фейсбук</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__copyright">
+          <div class="copyright">
+            <a class="copyright__link" href="#">HTML Academy</a>
+            <a class="copyright__logo" href="#">
+              <img src="img/htmlacademy.svg" width="27" height="35" alt="HTML Academy">
+            </a>
+          </div>
         </div>
       </div>
     </footer>

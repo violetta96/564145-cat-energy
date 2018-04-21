@@ -1,0 +1,97 @@
+.demo {
+  width: 280px;
+  margin: 0 auto;
+  padding: 30px 20px;
+
+  background-color: @blocks-background-color;
+}
+
+.demo__title {
+  .p-reset();
+  margin-bottom: 25px;
+
+  color: @title-color;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.demo__description {
+  .p-reset();
+  font-family: 'Arial';
+  margin-right: 10px;
+  margin-bottom: 23px;
+}
+
+.result__list {
+  .ul-reset();
+  margin-bottom: 35px;
+
+}
+
+.result__item {
+  border: 1px solid @border-color;
+  border-radius: 3px;
+}
+
+.result__item-number {
+  line-height: 24px;
+  font-size: 24px;
+  color: @title-color;
+  text-transform: uppercase;
+}
+
+.result__item-info {
+  font-family: 'Arial';
+  line-height: 12px;
+  font-size: 12px;
+}
+
+.demo__cost{
+  .p-reset();
+  margin-bottom: 35px;
+
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.demo__img-before {
+  width: 100%;
+  height: 280px;
+  background: url(../img/before-mobile@1x.png) no-repeat 0 0;
+}
+
+.demo__img-after {
+  display: none;
+  width: 100%;
+  height: 280px;
+  background: url(../img/after-mobile@1x.png) no-repeat 0 0;
+}
+
+.btn__result {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+}
+
+.demo__bar {
+  padding: 3px 5px;
+
+  background-color: @background-color;
+  border: 1px solid @border-color;
+  border-radius: 6px;
+  width: 84px;
+  height: 14px;
+  box-sizing: border-box;
+}
+
+.demo__toggle {
+  background-color: #68b738;
+  border-radius: 6px;
+  width: 50%;
+  height: 6px;
+}
