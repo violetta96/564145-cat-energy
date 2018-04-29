@@ -1,11 +1,27 @@
 body {
-  background-color: @background-color;
-
   color: @text-color;
   font-family: 'Oswald', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
+
+  background-color: @background-color;
+}
+
+@media (min-width: @desktop-width) {
+  .main-body {
+    margin: 0px auto;
+    width: 1440px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .body-wrapper {
+    width: 1440px;
+    background-image: url(../img/index-background-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
 }
 
 img {
@@ -17,6 +33,20 @@ img {
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 706px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1220px;
+    padding: 0 110px;
+  }
 }
 
 .visually-hidden {
