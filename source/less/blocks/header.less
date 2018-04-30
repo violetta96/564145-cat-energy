@@ -1,18 +1,54 @@
 .header {
   width: 280px;
   margin: 0 auto;
-  padding: 0px 20px;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   border-bottom: 1px solid @border-color;
 }
 
+@media (min-width: @tablet-width) {
+  .header {
+    width: 708px;
+    padding: 25px 30px;
+
+    border-bottom: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header {
+    width: 1220px;
+    padding: 0px 110px;
+    padding-top: 50px;
+
+    border-bottom: none;
+  }
+}
+
 .main-nav__list {
   .ul-reset();
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    width: 480px;
+  }
 }
 
 .main-nav__item {
   text-align: center;
-  border-top: 1px solid @border-color;
 }
 
 .main-nav__item-link {
@@ -27,20 +63,54 @@
   text-align: center;
 }
 
+@media (min-width: @tablet-width) {
+  .main-nav__item-link {
+    padding: 10px 0px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .main-nav__item-link-active {
+    border-bottom: 2px solid @decoration-line-color;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contrast-link {
+    color: @contrast-line-color;
+  }
+
+  .contrast-link-active {
+    border-bottom: 2px solid @contrast-line-color;
+  }
+}
+
 .main-nav__burger {
-  padding: 9px 12px;
+  padding: 12px 12px;
   background-color: transparent;
   border: none;
   position: relative;
+
+  &:after {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 24px;
+      height: 18px;
+      content: "";
+
+      background: url(../img/icon-mobile-menu.svg) no-repeat 0 0;
+  }
 }
 
-.main-nav__burger::after {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 24px;
-  height: 18px;
-  content: "";
+@media (min-width: @tablet-width) {
+  .main-nav__burger {
+    display: none;
+  }
+}
 
-  background: url(../img/icon-mobile-menu.svg) no-repeat 0 0;
+@media (min-width: @desktop-width) {
+  .main-nav__burger {
+    display: none;
+  }
 }
