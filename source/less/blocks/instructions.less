@@ -119,16 +119,17 @@
       content: "";
 
       background: url(../img/advantage-leaf@1x.png) no-repeat 0 0;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url(../img/advantage-leaf@2x.png);
+        background-size: 50px auto;
+      }
   }
 }
 
 @media (min-width: @tablet-width) {
   .instructions__item--eco {
     position: relative;
-
-    background-image: url(../img/one-background-tablet.png);
-    background-repeat: no-repeat;
-    background-position: 70% 100%;
 
     &:after {
         position: absolute;
@@ -155,16 +156,17 @@
       content: "";
 
       background: url(../img/advantage-powder@1x.png) no-repeat 0 0;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url(../img/advantage-powder@2x.png);
+        background-size: 50px auto;
+      }
   }
 }
 
 @media (min-width: @tablet-width) {
   .instructions__item--water {
     position: relative;
-
-    background-image: url(../img/two-background-tablet.png);
-    background-repeat: no-repeat;
-    background-position: 90% 100%;
 
     &:after {
         position: absolute;
@@ -191,16 +193,17 @@
       content: "";
 
       background: url(../img/advantage-dining@1x.png) no-repeat 0 0;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url(../img/advantage-dining@2x.png);
+        background-size: 50px auto;
+      }
   }
 }
 
 @media (min-width: @tablet-width) {
   .instructions__item--eat {
     position: relative;
-
-    background-image: url(../img/three-background-tablet.png);
-    background-repeat: no-repeat;
-    background-position: 90% 100%;
 
     &:after {
         position: absolute;
@@ -227,16 +230,17 @@
       content: "";
 
       background: url(../img/advantage-clock@1x.png) no-repeat 0 0;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url(../img/advantage-clock@2x.png);
+        background-size: 50px auto;
+      }
   }
 }
 
 @media (min-width: @tablet-width) {
   .instructions__item--time {
     position: relative;
-
-    background-image: url(../img/four-background-tablet.png);
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
 
     &:after {
         position: absolute;
@@ -253,4 +257,74 @@
 
 .instructions__info {
   .p-reset();
+}
+
+@media (min-width: @tablet-width) {
+  .instructions__info--eco {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        bottom: 70px;
+        left: 119px;
+        content: "1";
+
+        font-size: 280px;
+        font-family: "Oswald";
+        font-weight: 500;
+        color: @blocks-background-color;
+        z-index: -1;
+    }
+  }
+
+  .instructions__info--water {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        bottom: 70px;
+        left: 110px;
+        content: "2";
+
+        font-size: 280px;
+        font-family: "Oswald";
+        font-weight: 500;
+        color: @blocks-background-color;
+        z-index: -1;
+    }
+  }
+
+  .instructions__info--eat {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        bottom: 70px;
+        left: 115px;
+        content: "3";
+
+        font-size: 280px;
+        font-family: "Oswald";
+        font-weight: 500;
+        color: @blocks-background-color;
+        z-index: -1;
+    }
+  }
+
+  .instructions__info--time {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        bottom: 70px;
+        left: 115px;
+        content: "4";
+
+        font-size: 280px;
+        font-family: "Oswald";
+        font-weight: 500;
+        color: @blocks-background-color;
+        z-index: -1;
+    }
+  }
 }
