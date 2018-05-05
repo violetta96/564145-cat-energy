@@ -256,14 +256,31 @@
   text-transform: uppercase;
   color: @link-color;
 
-  &:after {
-      position: absolute;
-      top: 23px;
-      right: -40px;
-      width: 25px;
-      height: 10px;
-      content: "";
+  &:hover {
+    color: @link-color;
 
-      background: url(../img/icon-right-arrow-long.svg) no-repeat 0 0;
+    .programs__item-link-icon {
+      left: 100px;
+      width: 32px;
+    }
   }
+
+  &:active {
+    color: @text-color-active;
+
+  .programs__item-link-icon {
+      left: 100px;
+      width: 32px;
+      opacity: 0.3;
+  }
+ }
+}
+
+.programs__item-link-icon {
+  position: absolute;
+  top: 23px;
+  left: 100px;
+  width: 25px;
+  height: 10px;
+  color: #3F4242;
 }

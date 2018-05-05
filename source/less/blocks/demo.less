@@ -254,10 +254,13 @@
 
 
 @media (min-width: @tablet-width) {
+  .demo-progress {
+   width: 708px;
+}
   .demo-progress__img-wrapper {
    display: flex;
    position: relative;
-   width: 600px;
+   width: 708px;
    height: 530px;
    margin: 0px auto;
   }
@@ -265,12 +268,12 @@
 
 @media (min-width: @desktop-width) {
   .demo-progress {
-   width: 570px;
-   margin-left: 150px;
+   width: 610px;
+   margin-left: 165px;
   }
 
   .demo-progress__img-wrapper {
-   width: 570px;
+   width: 610px;
    margin: 0px 0px;
   }
 }
@@ -291,24 +294,35 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-
-}
-
 .demo-progress__img-before {
-  background: url(../img/before-mobile@1x.png) no-repeat 0% 0%;
+  background: url(../img/before-mobile@1x.png) no-repeat 50% 0%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url(../img/before-mobile@2x.png);
+    background-size: 280px auto;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .demo-progress__img-before {
-    background: url(../img/before-desktop.png) no-repeat 10% 50%;
+    background: url(../img/before-tablet@1x.png) no-repeat -5% 20%;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url(../img/before-tablet@2x.png);
+      background-size: 690px auto;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .demo-progress__img-before {
-    display: none;
-    background: url(../img/before-desktop.png) no-repeat 10% 50%;
+    width: 325px;
+    background: url(../img/before-desktop@1x.png) no-repeat 11% 50%;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url(../img/before-desktop@2x.png);
+      background-size: 690px auto;
+    }
   }
 }
 
@@ -319,17 +333,27 @@
 
 @media (min-width: @tablet-width) {
   .demo-progress__img-after {
-    left: 300px;
+    left: 354px;
     display: block;
-    background: url(../img/after-desktop.png) no-repeat 100% 0%;
+    background: url(../img/after-tablet@1x.png) no-repeat 100% 0%;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url(../img/after-tablet@2x.png);
+      background-size: 690px auto;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .demo-progress__img-after {
-    width: 100%;
-    left: 0px;
-    background: url(../img/after-desktop.png) no-repeat 0% 0%;
+    width: 285px;
+    left: 325px;
+    background: url(../img/after-desktop@1x.png) no-repeat 90% 0%;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url(../img/after-desktop@2x.png);
+      background-size: 690px auto;
+    }
   }
 }
 
@@ -344,14 +368,15 @@
 @media (min-width: @tablet-width) {
   .demo-progress__btn {
     width: 570px;
-    margin: 0 70px;
+    margin: 0px 70px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .demo-progress__btn {
-    margin: 0 0px;
+    margin: 0px;
     margin-top: 15px;
+    margin-left: 43px;
   }
 }
 
@@ -363,6 +388,10 @@
 
   background-color: transparent;
   border: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .btn__result--before {
@@ -378,17 +407,29 @@
     padding: 5px 0px;
 
     border-bottom: 1px dotted @border-darker-color;
+
+    &:hover {
+      border-bottom: 1px solid @border-darker-color;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 
   .btn__result--after {
     padding: 5px 0px;
 
     border-bottom: 1px dotted @border-darker-color;
+
+    &:hover {
+      border-bottom: 1px solid @border-darker-color;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
-}
-
-@media (min-width: @desktop-width) {
-
 }
 
 .demo-progress__bar {
@@ -416,16 +457,13 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-
-}
-
 .demo-progress__toggle {
   display: block;
   background-color: @btn-color;
   border-radius: 6px;
   width: 50%;
   height: 6px;
+  cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
@@ -437,9 +475,16 @@
     border-radius: 50%;
     border: 12px solid @background-color;
     box-shadow: 0 0 0 1px @border-darker-color;
+
+    &:hover {
+      box-shadow: 0px 3px 5px 0px @border-darker-color,
+                  0 0 0 1px @border-darker-color;
+    }
+
+    &:active {
+      box-shadow: 0 0 0 2px rgb(104, 183, 56),
+                  0px 4px 5px 0px @border-darker-color,
+                  0 0 0 1px @border-darker-color;
+    }
   }
-}
-
-@media (min-width: @desktop-width) {
-
 }
