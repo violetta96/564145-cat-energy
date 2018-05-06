@@ -1,18 +1,14 @@
 .header {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0px 0px;
-
   border-bottom: 1px solid @border-color;
 }
+
 
 @media (min-width: @tablet-width) {
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 708px;
-    padding: 25px 30px;
+    padding: 25px 0px;
 
     border-bottom: none;
   }
@@ -20,19 +16,11 @@
 
 @media (min-width: @desktop-width) {
   .header {
-    width: 1220px;
-    padding: 0px 110px;
-    padding-top: 50px;
-
-    border-bottom: none;
-  }
-
-  .main-header {
-    width: 1300px;
     padding: 0px 0px;
-    padding-left: 110px;
     padding-top: 50px;
     margin: 0px;
+
+    border-bottom: none;
   }
 }
 

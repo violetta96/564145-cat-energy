@@ -1,14 +1,10 @@
 .demo {
-  padding: 30px 20px;
-  width: 280px;
-  margin: 0 auto;
+  padding: 30px 0px;
   background-color: @blocks-background-color;
 }
 
 @media (min-width: @tablet-width) {
   .demo {
-    width: 706px;
-    padding: 0 30px;
     padding-top: 50px;
     padding-bottom: 65px;
 
@@ -19,17 +15,20 @@
 
 @media (min-width: @desktop-width) {
   .demo {
-    width: 1220px;
-    padding: 0 110px;
+    margin: 0px auto;
+    width: 1440px;
     padding-top: 0px;
     padding-bottom: 70px;
-    height: 580px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 
     background: linear-gradient(@background-color 30%,@blocks-background-color 30%);
     border-top: none;
+  }
+
+  .demo-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 580px;
   }
 }
 

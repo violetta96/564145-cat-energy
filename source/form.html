@@ -8,34 +8,35 @@
   </head>
 
   <body>
-
-    <header class="header">
-      <div class="logo">
-        <a class="logo__link" href="index.html">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="logo__mobile" src="img/logo-mobile.svg" width="192" height="37" alt="Кэт энерджи">
-          </picture>
-        </a>
-      </div>
-      <nav class="main-nav main-nav--close main-nav--nojs">
-        <button class="main-nav__burger" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="catalog.html">Католог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link main-nav__item-link-active" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div class="header-container">
+      <header class="header">
+        <div class="logo">
+          <a class="logo__link" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__mobile" src="img/logo-mobile.svg" width="192" height="37" alt="Кэт энерджи">
+            </picture>
+          </a>
+        </div>
+        <nav class="main-nav main-nav--close main-nav--nojs">
+          <button class="main-nav__burger" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="catalog.html">Католог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link main-nav__item-link-active" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
     <main class="main">
       <section class="select">
@@ -135,6 +136,14 @@
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="map-contacts">
           <div class="contacts">
+            <div class="contacts-container">
+              <div class="contacts-wrapper">
+                <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
+                <p class="contacts__adress">
+                  ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+                </p>
+              </div>
+            </div>
             <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
             <p class="contacts__adress">
               ул. Большая Конюшенная, д. 19/8 Санкт-Петербург

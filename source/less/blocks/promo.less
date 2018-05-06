@@ -1,6 +1,4 @@
 .promo {
-  width: 320px;
-  margin: 0 auto;
   margin-bottom: 22px;
 
   background-image: url(../img/index-background-mobile@1x.jpg);
@@ -15,11 +13,8 @@
 
 @media (min-width: @tablet-width) {
   .promo {
-    width: 708px;
     height: 875px;
     margin: 0px;
-    margin-bottom: 0px;
-    padding-left: 90px;
 
     background-image: url(../img/index-can-tablet@1x.jpg);
     background-position: 35% 100%;
@@ -33,11 +28,11 @@
 
 @media (min-width: @desktop-width) {
   .promo {
+    margin: 0px auto;
     width: 1440px;
     height: 700px;
     margin-bottom: 80px;
     margin-top: -110px;
-    padding-left: 80px;
 
     background: linear-gradient(to right, #ffffff 52.7%, #64a83c 47.3%);
     background: url(../img/index-background-desktop@1x.jpg) no-repeat right top;
@@ -49,12 +44,21 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .promo-wrapper {
+    width: 619px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 600px;
+    margin-left: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo-wrapper {
+    width: 895px;
+    margin-left: 80px;
   }
 }
 
@@ -131,7 +135,7 @@
   .promo__picture {
     display: block;
     order: 4;
-    margin-left: -195px;
+    margin-left: -35px;
   }
 
   .promo__img {
