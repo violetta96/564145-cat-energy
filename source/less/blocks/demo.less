@@ -1,5 +1,6 @@
 .demo {
-  padding: 30px 0px;
+  padding: 20px 0px;
+  padding-bottom: 35px;
   background-color: @blocks-background-color;
 }
 
@@ -8,9 +9,9 @@
     margin: 0px auto;
     width: 768px;
     padding-top: 50px;
-    padding-bottom: 65px;
+    padding-bottom: 70px;
 
-    background: linear-gradient(@background-color 60%,@blocks-background-color 30%);
+    background: linear-gradient(@background-color 58%,@blocks-background-color 30%);
     border-top: 1px solid @border-color;
   }
 }
@@ -20,7 +21,7 @@
     margin: 0px auto;
     width: 1440px;
     padding-top: 0px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
 
     background: linear-gradient(@background-color 30%,@blocks-background-color 30%);
     border-top: none;
@@ -37,7 +38,7 @@
 
 .demo__title {
   .p-reset();
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
   color: @title-color;
   font-weight: 500;
@@ -47,7 +48,7 @@
 
 @media (min-width: @tablet-width) {
   .demo__title {
-    margin-bottom: 60px;
+    margin-bottom: 65px;
     font-size: 60px;
   }
 }
@@ -55,7 +56,7 @@
 @media (min-width: @desktop-width) {
   .demo__title {
     margin-top: 60px;
-    margin-bottom: 140px;
+    margin-bottom: 144px;
   }
 }
 
@@ -86,7 +87,7 @@
 @media (min-width: @tablet-width) {
   .demo__result {
     display: flex;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
 
   }
 }
@@ -220,12 +221,13 @@
 @media (min-width: @tablet-width) {
   .demo__cost{
     width: 175px;
-    margin-left: 163px;
+    margin-left: 166px;
     margin-bottom: 0px;
 
     font-size: 20px;
     line-height: 30px;
     text-align: right;
+    padding-top: 5px;
   }
 }
 
@@ -234,6 +236,7 @@
     width: 335px;
     margin-left: 0px;
     margin-bottom: 0px;
+    padding-top: 0px;
 
     font-size: 20px;
     line-height: 20px;
@@ -300,7 +303,7 @@
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url(../img/before-mobile@2x.png);
-    background-size: 280px auto;
+    background-size: 280px 230px;
   }
 }
 
@@ -363,7 +366,8 @@
   justify-content: space-between;
   width: 200px;
   align-items: center;
-  margin: 0 45px;
+  margin: 0px 45px;
+  margin-top: 10px
 }
 
 @media (min-width: @tablet-width) {
@@ -376,7 +380,7 @@
 @media (min-width: @desktop-width) {
   .demo-progress__btn {
     margin: 0px;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 43px;
   }
 }

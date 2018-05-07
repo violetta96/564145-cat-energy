@@ -7,7 +7,8 @@
 
 .add-catalog__title {
   .p-reset();
-  padding: 25px 0px;
+  padding: 30px 0px;
+  padding-top: 30px;
   position: relative;
 
   color: @title-color;
@@ -30,20 +31,21 @@
 @media (min-width: @tablet-width) {
   .add-catalog__title {
     margin-left: 37px;
-    padding: 73px 0px;
+    padding: 60px 0px;
+    padding-bottom: 80px;
 
     font-size: 36px;
     line-height: 36px;
 
     &:before {
-        top: 95px;
+        top: 80px;
         left: 373px;
         width: 330px;
     }
 
     &:after {
         position: absolute;
-        top: 95px;
+        top: 80px;
         right: 710px;
         width: 28px;
         height: 3px;
@@ -57,7 +59,8 @@
 @media (min-width: @desktop-width) {
   .add-catalog__title {
     margin-left: 0px;
-    padding: 77px 0px;
+    padding: 83px 0px;
+    padding-top: 70px;
 
     &:before {
         top: 95px;
@@ -86,13 +89,13 @@
 
 @media (min-width: @desktop-width) {
   .add-catalog__list {
-    margin-bottom: 85px;
+    margin-bottom: 90px;
   }
 }
 
 .add-catalog__item {
   padding: 0px 0px;
-  padding-bottom: 17px;
+  padding-bottom: 20px;
   width: 280px;
 
   border-bottom: 1px solid @border-darker-color;
@@ -104,7 +107,8 @@
 
 @media (min-width: @tablet-width) {
   .add-catalog__item {
-    padding: 27px 37px;
+    padding: 20px 37px;
+    padding-bottom: 30px;
     width: 632px;
 
     border: 1px solid @border-darker-color;

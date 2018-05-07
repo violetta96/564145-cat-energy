@@ -1,6 +1,7 @@
 .select__title {
   .p-reset();
-  margin: 20px 0;
+  margin: 15px 0;
+  margin-bottom: 25px;
 
   color: @title-color;
   font-size: 36px;
@@ -10,7 +11,7 @@
 
 @media (min-width: @tablet-width) {
   .select__title {
-    margin: 35px 0;
+    margin: 30px 0;
     margin-bottom: 55px;
 
     font-size: 60px;
@@ -20,13 +21,14 @@
 @media (min-width: @desktop-width) {
   .select__title {
     margin: 75px 0;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
   }
 }
 
 .select__info {
   .p-reset();
   margin-bottom: 38px;
+  margin-right: 50px;
 
   text-transform: uppercase;
 }
@@ -34,6 +36,7 @@
 @media (min-width: @tablet-width) {
   .select__info {
     width: 325px;
+    margin-right: 0px;
     margin-bottom: 65px;
     margin-left: 40px;
 
@@ -44,7 +47,7 @@
 
 @media (min-width: @desktop-width) {
   .select__info {
-    margin-bottom: 70px;
+    margin-bottom: 65px;
     margin-left: 0px;
   }
 }
@@ -59,7 +62,7 @@
 @media (min-width: @desktop-width) {
   .select__form {
     padding: 0px;
-    padding-bottom: 80px;
+    padding-bottom: 85px;
   }
 }
 
@@ -119,7 +122,11 @@
 }
 
 .fiels__item--cat:last-child {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.fiels__item--cat:last-child .field-label {
+  width: 100px;
 }
 
 @media (min-width: @tablet-width) {
@@ -131,7 +138,11 @@
   }
 
   .fiels__item--cat:last-child {
-    margin-bottom: 50px;
+    margin-bottom: 75px;
+  }
+
+  .fiels__item--cat:last-child .field-label {
+    width: 90px;
   }
 }
 
@@ -139,10 +150,13 @@
   .fiels__item--cat:last-child {
     margin-bottom: 0px;
   }
+  .fiels__item--cat:last-child .field-label {
+    width: 125px;
+  }
 }
 
 .field-label {
-  margin-bottom: 16px;
+  margin-bottom: 0px;
 
   font-size: 16px;
   text-transform: uppercase;
@@ -153,6 +167,7 @@
   .field-label {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 5px;
   }
 }
 
@@ -213,6 +228,7 @@
   .field--type {
     padding: 37px 27px;
     padding-bottom: 10px;
+    margin-bottom: 5px;
 
     border: 1px solid @border-color;
   }
@@ -223,6 +239,7 @@
     width: 516px;
     padding: 37px 27px;
     padding-bottom: 10px;
+    margin-bottom: 0px;
   }
 }
 
@@ -407,6 +424,7 @@
 @media (min-width: @tablet-width) {
   .field-legend--contacts {
     padding: 75px 0px;
+    padding-bottom: 80px;
     &:before {
         top: 95px;
         left: 553px;
@@ -427,6 +445,7 @@
 
 @media (min-width: @desktop-width) {
   .field-legend--contacts {
+      padding-bottom: 75px;
     &:before {
         left: 550px;
         width: 780px;
@@ -490,9 +509,11 @@
 }
 
 .field-legend--comment {
+  padding-top: 15px;
+  padding-bottom: 40px;
   &:before {
       position: absolute;
-      top: 39px;
+      top: 30px;
       right: -180px;
       width: 160px;
       height: 3px;
@@ -504,17 +525,17 @@
 
 @media (min-width: @tablet-width) {
   .field-legend--comment {
-    padding-top: 50px;
+    padding-top: 45px;
     padding-bottom: 75px;
     &:before {
-        top: 70px;
+        top: 65px;
         left: 217px;
         width: 480px;
     }
 
     &:after {
         position: absolute;
-        top: 70px;
+        top: 65px;
         right: 223px;
         width: 30px;
         height: 3px;
@@ -527,12 +548,16 @@
 
 @media (min-width: @desktop-width) {
   .field-legend--comment {
+    padding-top: 50px;
+    padding-bottom: 75px;
     &:before {
+        top: 70px;
         left: 220px;
         width: 1111px;
     }
 
     &:after {
+        top: 70px;
         right: 220px;
         width: 70px;
     }
@@ -541,6 +566,7 @@
 
 .field__comment {
   padding: 10px 15px;
+  width: 250px;
 
   text-transform: uppercase;
   font-weight: 500;
@@ -572,11 +598,11 @@
 }
 
 .field-legend--add {
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 40px;
   &:before {
       position: absolute;
-      top: 39px;
+      top: 25px;
       right: -160px;
       width: 137px;
       height: 3px;
@@ -588,16 +614,17 @@
 
 @media (min-width: @tablet-width) {
   .field-legend--add {
-    padding: 70px 0px;
+    padding: 45px 0px;
+    padding-bottom: 65px;
     &:before {
-        top: 90px;
+        top: 65px;
         left: 253px;
         width: 445px;
     }
 
     &:after {
         position: absolute;
-        top: 90px;
+        top: 65px;
         right: 253px;
         width: 30px;
         height: 3px;
@@ -610,16 +637,16 @@
 
 @media (min-width: @desktop-width) {
   .field-legend--add {
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 70px;
     &:before {
-        top: 70px;
+        top: 65px;
         left: 253px;
         width: 1080px;
     }
 
     &:after {
-        top: 70px;
+        top: 65px;
         right: 253px;
         width: 70px;
     }
@@ -785,7 +812,7 @@
 }
 
 .button-block {
-  margin: 30px 0px;
+  margin: 35px 0px;
   margin-top: 20px;
 
   text-align: center;
@@ -799,6 +826,12 @@
 
     margin: 0px 0px;
     margin-top: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button-block {
+    margin-top: 20px;
   }
 }
 
