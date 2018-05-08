@@ -118,10 +118,21 @@
     }
 
     &:active {
-      colore: @link-color;
+      color: @link-color;
     }
   }
 
+  .contrast-link-active {
+    border-bottom: 2px solid @decoration-line-color;
+
+    &:hover {
+      color: @link-color;
+    }
+
+    &:active {
+      color: @link-color;
+    }
+}
 }
 
 @media (min-width: @desktop-width) {
@@ -133,7 +144,7 @@
     }
 
     &:active {
-      colore: @contrast-text-color-active;
+      color: @contrast-text-color-active;
     }
   }
   .contrast-link-active {
