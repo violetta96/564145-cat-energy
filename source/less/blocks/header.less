@@ -35,6 +35,7 @@
 
 @media (min-width: @tablet-width) {
   .logo__mobile {
+    width: 175px;
     &:hover {
       opacity: 0.6;
     }
@@ -43,6 +44,7 @@
 
 @media (min-width: @desktop-width) {
   .logo__mobile{
+    width: 205px;
     &:active {
       opacity: 0.3;
     }
@@ -56,7 +58,7 @@
 
 @media (min-width: @tablet-width) {
   .main-nav__list {
-    width: 440px;
+    width: 437px;
     display: flex;
     justify-content: space-between;
   }
@@ -136,8 +138,18 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav__item-link {
+    font-size: 20px;
+  }
+
+  .main-nav__item-link-active {
+    font-size: 20px;
+  }
+
+
   .contrast-link {
     color: @contrast-line-color;
+    font-size: 20px;
 
     &:hover {
       color: @contrast-text-color-hover;
@@ -150,6 +162,7 @@
   .contrast-link-active {
     color: @contrast-line-color;
     border-bottom: 2px solid @contrast-line-color;
+    font-size: 20px;
 
     &:hover {
       color: @contrast-line-color;

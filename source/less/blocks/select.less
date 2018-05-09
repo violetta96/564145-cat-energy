@@ -55,7 +55,7 @@
 @media (min-width: @tablet-width) {
   .select__form {
     padding: 0px 40px;
-    padding-bottom: 70px;
+    padding-bottom: 68px;
   }
 }
 
@@ -142,7 +142,7 @@
   }
 
   .fiels__item--cat:last-child .field-label {
-    width: 90px;
+    width: 125px;
   }
 }
 
@@ -167,7 +167,7 @@
   .field-label {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
   }
 }
 
@@ -207,7 +207,8 @@
 
 @media (min-width: @tablet-width) {
   .fiels__text {
-    padding: 13px 20px;
+    margin-left: 14px;
+    padding: 14px 20px;
 
     font-size: 20px;
   }
@@ -259,11 +260,17 @@
 
 @media (min-width: @tablet-width) {
   .field-label--type {
-    margin-bottom: 27px;
+    margin-bottom: 30px;
     padding-left: 60px;
 
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .field-label--type {
+    margin-bottom: 30px;
   }
 }
 
@@ -411,7 +418,7 @@
   padding: 30px 0px;
   &:before {
       position: absolute;
-      top: 39px;
+      top: 43px;
       right: -20px;
       width: 100px;
       height: 3px;
@@ -424,15 +431,15 @@
 @media (min-width: @tablet-width) {
   .field-legend--contacts {
     padding: 75px 0px;
-    padding-bottom: 80px;
+    padding-top: 65px;
     &:before {
-        top: 95px;
+        top: 90px;
         left: 553px;
         width: 145px;
     }
     &:after {
         position: absolute;
-        top: 95px;
+        top: 90px;
         right: 556px;
         width: 30px;
         height: 3px;
@@ -445,12 +452,15 @@
 
 @media (min-width: @desktop-width) {
   .field-legend--contacts {
-      padding-bottom: 75px;
+    padding-top: 65px;
+    padding-bottom: 75px;
     &:before {
+        top: 90px;
         left: 550px;
         width: 780px;
     }
     &:after {
+        top: 90px;
         right: 555px;
         width: 70px;
     }
@@ -479,7 +489,7 @@
 @media (min-width: @tablet-width) {
   .mail-img {
       top: 18px;
-      right: 20px;
+      right: 18px;
   }
 }
 
@@ -495,7 +505,7 @@
 
 .tel-img {
     position: absolute;
-    top: 12px;
+    top: 13px;
     right: 13px;
     width: 20px;
     height: 20px;
@@ -503,8 +513,8 @@
 
 @media (min-width: @tablet-width) {
   .tel-img {
-      top: 15px;
-      right: 16px;
+      top: 18px;
+      right: 14px;
   }
 }
 
@@ -528,14 +538,14 @@
     padding-top: 45px;
     padding-bottom: 75px;
     &:before {
-        top: 65px;
+        top: 70px;
         left: 217px;
         width: 480px;
     }
 
     &:after {
         position: absolute;
-        top: 65px;
+        top: 70px;
         right: 223px;
         width: 30px;
         height: 3px;
@@ -549,7 +559,7 @@
 @media (min-width: @desktop-width) {
   .field-legend--comment {
     padding-top: 50px;
-    padding-bottom: 75px;
+    padding-bottom: 70px;
     &:before {
         top: 70px;
         left: 220px;
@@ -566,7 +576,9 @@
 
 .field__comment {
   padding: 10px 15px;
-  width: 250px;
+  width: 251px;
+  height: 129px;
+  font-size: 16px;
 
   text-transform: uppercase;
   font-weight: 500;
@@ -637,16 +649,16 @@
 
 @media (min-width: @desktop-width) {
   .field-legend--add {
-    padding-top: 40px;
-    padding-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 65px;
     &:before {
-        top: 65px;
+        top: 70px;
         left: 253px;
         width: 1080px;
     }
 
     &:after {
-        top: 65px;
+        top: 70px;
         right: 253px;
         width: 70px;
     }
@@ -825,7 +837,7 @@
     justify-content: space-between;
 
     margin: 0px 0px;
-    margin-top: 15px;
+    margin-top: 20px;
   }
 }
 

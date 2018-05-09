@@ -76,7 +76,6 @@
   .contacts {
     padding: 70px 0px;
     padding-bottom: 60px;
-    width: 708px;
     justify-content: space-between;
   }
 
@@ -92,8 +91,7 @@
     position: absolute;
     top: 95px;
     left: 110px;
-    padding: 65px 75px;
-    width: 420px;
+    padding: 65px 0px;
     justify-content: space-between;
     z-index: 5;
     background-color: @background-color;
@@ -154,8 +152,13 @@
 }
 
 @media (min-width: @desktop-width) {
+  .contacts__adress {
+    width: 170px;
+    text-align: left;
+  }
+
   .adress-info {
-    margin-top: 0px;
+    margin-top: 20px;
   }
 }
 
@@ -263,6 +266,13 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .footer__logo {
+    padding: 60px 0px;
+    width: 160px;
+  }
+}
+
 .logo__img {
   width: 128px;
   height: 25px;
@@ -289,16 +299,25 @@
 
 .socials__list {
   .ul-reset();
-  padding: 20px 70px;
+  width: 132px;
+  padding: 15px 70px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
 
 @media (min-width: @tablet-width) {
   .socials__list {
-    padding: 55px 0px;
+    padding: 50px 0px;
     width: 130px;
-    padding-bottom: 60px
+    padding-bottom: 65px
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .socials__list {
+    padding: 60px 0px;
+    padding-bottom: 65px
   }
 }
 
@@ -393,8 +412,15 @@
 
 @media (min-width: @tablet-width) {
   .copyright {
-    padding: 50px 0px;
+    padding: 45px 0px;
     padding-bottom: 65px;
+    width: 162px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    padding: 60px 0px;
     width: 162px;
   }
 }
