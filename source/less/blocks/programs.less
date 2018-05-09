@@ -300,6 +300,20 @@
 
 @media (min-width: @tablet-width) {
   .programs__item-link-icon {
-    left: 125px;
+    left: 135px;
   }
+
+.programs__item-link {
+  &:hover {
+    .programs__item-link-icon {
+      left: 130px;
+    }
+  }
+
+  &:active {
+  .programs__item-link-icon {
+      left: 130px;
+  }
+ }
+}
 }
