@@ -1,5 +1,5 @@
 .instructions {
-  padding-bottom: 22px;
+  padding-bottom: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -26,14 +26,14 @@
 
 @media (min-width: @tablet-width) {
   .instructions__title {
-    margin-bottom: 35px;
+    margin-bottom: 36px;
     font-size: 60px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .instructions__title {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
   }
 }
 
@@ -59,7 +59,7 @@
 .instructions__item {
   .p-reset();
   padding-left: 80px;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   position: relative;
 
   font-family: 'Arial';
@@ -104,6 +104,7 @@
 @media (min-width: @desktop-width) {
   .instructions__item {
     margin-bottom: 0px;
+    width: 245px;
   }
 }
 
@@ -326,5 +327,17 @@
         color: @blocks-background-color;
         z-index: -1;
     }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .info-time {
+   padding-right: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info-time {
+   padding-right: 5px;
   }
 }

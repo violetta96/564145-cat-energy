@@ -2,7 +2,7 @@
   width: 280px;
   height: 290px;
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   background-color: #64a83c;
   background: url(../img/gift-photo-mobile@1x.jpg) no-repeat top center;
@@ -14,7 +14,7 @@
 
   &:before {
       position: absolute;
-      top: 68px;
+      top: 65px;
       right: 112px;
       width: 55px;
       height: 60px;
@@ -28,7 +28,7 @@
   .gift-banner {
     height: 200px;
     width: 706px;
-    margin-bottom: 70px;
+    margin-bottom: 75px;
 
     background-image: url(../img/gift-photo-tablet@1x.jpg);
 
@@ -75,14 +75,18 @@
 .gift-banner__discripton {
   position: absolute;
   bottom: 45px;
-  left: 5px;
-  margin: 0px 60px;
+  left: 0px;
+  margin: 0px 55px;
 
   font-family: "Arial";
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: @contrast-text-color;
+}
+
+.gift-banner-info {
+  padding-left: 5px;
 }
 
 @media (min-width: @tablet-width) {
@@ -94,14 +98,21 @@
 
     text-align: left;
   }
+  .gift-banner-info {
+    padding-left: 0px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .gift-banner__discripton {
     bottom: 44px;
-    left: 45px;
+    left: 40px;
     margin: 0px;
 
     text-align: center;
+  }
+
+  .gift-banner-info {
+    padding-left: 5px;
   }
 }

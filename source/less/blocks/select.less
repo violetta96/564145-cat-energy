@@ -1,7 +1,7 @@
 .select__title {
   .p-reset();
   margin: 15px 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   color: @title-color;
   font-size: 36px;
@@ -20,14 +20,14 @@
 
 @media (min-width: @desktop-width) {
   .select__title {
-    margin: 75px 0;
-    margin-bottom: 55px;
+    margin: 72px 0;
+    margin-bottom: 54px;
   }
 }
 
 .select__info {
   .p-reset();
-  margin-bottom: 38px;
+  margin-bottom: 40px;
   margin-right: 50px;
 
   text-transform: uppercase;
@@ -47,7 +47,7 @@
 
 @media (min-width: @desktop-width) {
   .select__info {
-    margin-bottom: 65px;
+    margin-bottom: 64px;
     margin-left: 0px;
   }
 }
@@ -55,7 +55,7 @@
 @media (min-width: @tablet-width) {
   .select__form {
     padding: 0px 40px;
-    padding-bottom: 68px;
+    padding-bottom: 75px;
   }
 }
 
@@ -100,7 +100,7 @@
   .p-reset();
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   &:active {
     .field-img {
@@ -122,11 +122,11 @@
 }
 
 .fiels__item--cat:last-child {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .fiels__item--cat:last-child .field-label {
-  width: 100px;
+  width: 94px;
 }
 
 @media (min-width: @tablet-width) {
@@ -138,7 +138,7 @@
   }
 
   .fiels__item--cat:last-child {
-    margin-bottom: 75px;
+    margin-bottom: 71px;
   }
 
   .fiels__item--cat:last-child .field-label {
@@ -156,7 +156,7 @@
 }
 
 .field-label {
-  margin-bottom: 0px;
+  margin-right: 1px;
 
   font-size: 16px;
   text-transform: uppercase;
@@ -167,19 +167,26 @@
   .field-label {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 0px;
+    margin-right: 17px;
+  }
+  .field-label--cat-age {
+    margin-right: 8px
   }
 }
 
 @media (min-width: @desktop-width) {
   .field-label {
-    margin-bottom: 0px;
+    margin-right: 17px;
+  }
+
+  .field-label--cat-age {
+    margin-right: 8px
   }
 }
 
 .fiels__text {
   margin-left: 13px;
-  padding: 12px 15px;
+  padding: 13px 14px;
   flex-grow: 2;
 
   text-transform: uppercase;
@@ -207,10 +214,17 @@
 
 @media (min-width: @tablet-width) {
   .fiels__text {
-    margin-left: 14px;
+    margin-left: 0px;
     padding: 14px 20px;
-
+    margin-right: -5px;
     font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fiels__text {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -219,7 +233,7 @@
 }
 
 .field--type {
-  padding: 28px 0px;
+  padding: 26px 0px;
   padding-bottom: 5px;
 
   border-bottom: 1px solid @border-color;
@@ -227,9 +241,11 @@
 
 @media (min-width: @tablet-width) {
   .field--type {
-    padding: 37px 27px;
-    padding-bottom: 10px;
-    margin-bottom: 5px;
+    width: 576px;
+    padding: 33px 28px;
+    padding-left: 26px;
+    padding-bottom: 0px;
+    margin-bottom: 12px;
 
     border: 1px solid @border-color;
   }
@@ -238,8 +254,8 @@
 @media (min-width: @desktop-width) {
   .field--type {
     width: 516px;
-    padding: 37px 27px;
-    padding-bottom: 10px;
+    padding: 35px 27px;
+    padding-bottom: 0px;
     margin-bottom: 0px;
   }
 }
@@ -250,7 +266,7 @@
 
 .field-label--type {
   .p-reset();
-  margin-bottom: 23px;
+  margin-bottom: 24px;
   padding-left: 45px;
   display: inline-block;
   position: relative;
@@ -260,7 +276,7 @@
 
 @media (min-width: @tablet-width) {
   .field-label--type {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     padding-left: 60px;
 
     font-size: 20px;
@@ -270,7 +286,7 @@
 
 @media (min-width: @desktop-width) {
   .field-label--type {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
   }
 }
 
@@ -313,24 +329,24 @@
 
 @media (min-width: @tablet-width) {
   .field-label--type::before {
-    top: -8px;
-    left: 0px;
-    width: 36px;
-    height: 36px;
+    top: -9px;
+    left: 2px;
+    width: 38px;
+    height: 38px;
   }
 
   .field-label--type:hover::before {
-    top: -8px;
+    top: -9px;
     left: 0px;
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
   }
 
   .field-label--type:disabled::before {
-    top: -8px;
+    top: -9px;
     left: 0px;
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
   }
 }
 
@@ -374,23 +390,23 @@
 @media (min-width: @tablet-width) {
   .field-radio:checked ~ .field-label--type::after {
     top: 3px;
-    left: 11px;
-    width: 16px;
-    height: 16px;
+    left: 14px;
+    width: 17px;
+    height: 17px;
   }
 
   .field-radio:checked ~ .field-label--type:hover::after {
     top: 3px;
-    left: 11px;
-    width: 16px;
-    height: 16px;
+    left: 14px;
+    width: 17px;
+    height: 17px;
   }
 
   .field-radio:checked ~ .field-label--type:disabled::after {
     top: 3px;
-    left: 11px;
-    width: 16px;
-    height: 16px;
+    left: 14px;
+    width: 17px;
+    height: 17px;
   }
 }
 
@@ -415,10 +431,11 @@
 }
 
 .field-legend--contacts {
-  padding: 30px 0px;
+  padding: 28px 0px;
+  padding-bottom: 32px;
   &:before {
       position: absolute;
-      top: 43px;
+      top: 42px;
       right: -20px;
       width: 100px;
       height: 3px;
@@ -428,19 +445,24 @@
   }
 }
 
+.field-label--contacts {
+  margin-right: -3px;
+}
+
 @media (min-width: @tablet-width) {
   .field-legend--contacts {
     padding: 75px 0px;
     padding-top: 65px;
+
     &:before {
-        top: 90px;
-        left: 553px;
+        top: 87px;
+        left: 555px;
         width: 145px;
     }
     &:after {
         position: absolute;
-        top: 90px;
-        right: 556px;
+        top: 87px;
+        right: 550px;
         width: 30px;
         height: 3px;
         content: "";
@@ -448,12 +470,20 @@
         background-color: @decoration-line-color;
     }
   }
+
+  .field-label--contacts {
+    margin-right: 19px;
+  }
+
+  .field__item--contacts-tel .field-label--contacts {
+    margin-right: 13px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .field-legend--contacts {
-    padding-top: 65px;
-    padding-bottom: 75px;
+    padding-top: 68px;
+    padding-bottom: 76px;
     &:before {
         top: 90px;
         left: 550px;
@@ -464,6 +494,14 @@
         right: 555px;
         width: 70px;
     }
+  }
+
+  .field__item--contacts-tel .field-label--contacts {
+    margin-right: 13px;
+  }
+
+  .field-label--contacts {
+    margin-right: 19px;
   }
 }
 
@@ -480,16 +518,27 @@
 
 .mail-img {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 16px;
+    right: 16px;
     width: 18px;
     height: 13px;
 }
 
 @media (min-width: @tablet-width) {
   .mail-img {
-      top: 18px;
-      right: 18px;
+      width: 19px;
+      height: 14px;
+      top: 20px;
+      right: 14px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .mail-img {
+      width: 19px;
+      height: 14px;
+      top: 19px;
+      right: 19px;
   }
 }
 
@@ -514,13 +563,24 @@
 @media (min-width: @tablet-width) {
   .tel-img {
       top: 18px;
-      right: 14px;
+      right: 12px;
+      width: 20px;
+      height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tel-img {
+      top: 18px;
+      right: 18px;
+      width: 20px;
+      height: 20px;
   }
 }
 
 .field-legend--comment {
-  padding-top: 15px;
-  padding-bottom: 40px;
+  padding-top: 17px;
+  padding-bottom: 33px;
   &:before {
       position: absolute;
       top: 30px;
@@ -538,15 +598,15 @@
     padding-top: 45px;
     padding-bottom: 75px;
     &:before {
-        top: 70px;
-        left: 217px;
+        top: 67px;
+        left: 220px;
         width: 480px;
     }
 
     &:after {
         position: absolute;
-        top: 70px;
-        right: 223px;
+        top: 67px;
+        right: 220px;
         width: 30px;
         height: 3px;
         content: "";
@@ -558,8 +618,8 @@
 
 @media (min-width: @desktop-width) {
   .field-legend--comment {
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding-top: 45px;
+    padding-bottom: 76px;
     &:before {
         top: 70px;
         left: 220px;
@@ -575,9 +635,9 @@
 }
 
 .field__comment {
-  padding: 10px 15px;
+  padding: 12px 15px;
   width: 251px;
-  height: 129px;
+  height: 125px;
   font-size: 16px;
 
   text-transform: uppercase;
@@ -588,9 +648,9 @@
 
 @media (min-width: @tablet-width) {
   .field__comment {
-    padding: 12px 20px;
-    width: 588px;
-    height: 150px;
+    padding: 10px 18px;
+    width: 590px;
+    height: 152px;
 
     font-size: 20px;
     line-height: 30px;
@@ -599,8 +659,8 @@
 
 @media (min-width: @desktop-width) {
   .field__comment {
-    padding: 12px 20px;
-    width: 1180px;
+    padding: 12px 19px;
+    width: 1182px;
     height: 150px;
   }
 }
@@ -610,11 +670,11 @@
 }
 
 .field-legend--add {
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 40px;
   &:before {
       position: absolute;
-      top: 25px;
+      top: 28px;
       right: -160px;
       width: 137px;
       height: 3px;
@@ -627,17 +687,17 @@
 @media (min-width: @tablet-width) {
   .field-legend--add {
     padding: 45px 0px;
-    padding-bottom: 65px;
+    padding-bottom: 66px;
     &:before {
-        top: 65px;
+        top: 68px;
         left: 253px;
         width: 445px;
     }
 
     &:after {
         position: absolute;
-        top: 65px;
-        right: 253px;
+        top: 68px;
+        right: 250px;
         width: 30px;
         height: 3px;
         content: "";
@@ -649,8 +709,8 @@
 
 @media (min-width: @desktop-width) {
   .field-legend--add {
-    padding-top: 50px;
-    padding-bottom: 65px;
+    padding-top: 45px;
+    padding-bottom: 68px;
     &:before {
         top: 70px;
         left: 253px;
@@ -664,7 +724,6 @@
     }
   }
 }
-
 
 @media (min-width: @tablet-width) {
   .field__list--add {
@@ -683,7 +742,7 @@
 
 @media (min-width: @tablet-width) {
   .field__option--add {
-    width: 285px;
+    width: 283px;
   }
 }
 
@@ -695,7 +754,7 @@
 
 .field-label--add {
   .p-reset();
-  margin-bottom: 23px;
+  margin-bottom: 24px;
   padding-left: 45px;
   display: inline-block;
   position: relative;
@@ -703,15 +762,15 @@
 
 @media (min-width: @tablet-width) {
   .field-label--add {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
     padding-left: 60px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .field-label--add {
-    margin-bottom: 50px;
-    padding-left: 60px;
+    margin-bottom: 52px;
+    padding-left: 58px;
   }
 }
 
@@ -752,20 +811,20 @@
 @media (min-width: @tablet-width) {
   .field-label--add::before {
     top: -8px;
-    width: 36px;
-    height: 36px;
+    width: 37px;
+    height: 37px;
   }
 
   .field-label--add:hover::before {
     top: -8px;
-    width: 36px;
-    height: 36px;
+    width: 37px;
+    height: 37px;
   }
 
   .field-label--add:disabled::before {
     top: -8px;
-    width: 36px;
-    height: 36px;
+    width: 37px;
+    height: 37px;
   }
 }
 
@@ -824,8 +883,8 @@
 }
 
 .button-block {
-  margin: 35px 0px;
-  margin-top: 20px;
+  margin: 29px 0px;
+  margin-top: 17px;
 
   text-align: center;
 }
@@ -837,7 +896,7 @@
     justify-content: space-between;
 
     margin: 0px 0px;
-    margin-top: 20px;
+    margin-top: 13px;
   }
 }
 
@@ -876,7 +935,7 @@
 
 @media (min-width: @tablet-width) {
   .form__note {
-    width: 285px;
+    width: 280px;
 
     font-size: 16px;
     text-align: left;

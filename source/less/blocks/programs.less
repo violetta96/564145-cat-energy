@@ -10,16 +10,16 @@
 }
 
 .programs__item {
-  margin-bottom: 15px;
-  padding-top: 32px;
+  margin-bottom: 20px;
+  padding-top: 30px;
   padding-left: 20px;
-  padding-right: 35px;
+  padding-right: 20px;
 
   background-color: @blocks-background-color;
 
   &:before {
       position: absolute;
-      top: 28px;
+      top: 26px;
       left: 22px;
       width: 50px;
       height: 50px;
@@ -35,8 +35,8 @@
     position: relative;
     margin-bottom: 30px;
     padding-top: 75px;
-    padding-left: 50px;
-    padding-right: 60px;
+    padding-left: 52px;
+    padding-right: 58px;
     padding-bottom: 45px;
 
     &:before {
@@ -56,14 +56,15 @@
 @media (min-width: @desktop-width) {
   .programs__item {
     position: relative;
-    margin-bottom: 65px;
-    padding-top: 80px;
-    padding-left: 50px;
-    padding-right: 55px;
+    width: 465px;
+    margin-bottom: 73px;
+    padding-top: 77px;
+    padding-left: 52px;
+    padding-right: 53px;
 
     &:before {
         position: absolute;
-        top: 50px;
+        top: 45px;
         left: 52px;
         width: 100px;
         height: 100px;
@@ -77,7 +78,7 @@
 
 .programs__item-title {
   .p-reset();
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   padding-left: 70px;
 
   font-size: 24px;
@@ -100,7 +101,7 @@
 @media (min-width: @desktop-width) {
   .programs__item-title {
     width: 300px;
-    padding-left: 165px;
+    padding-left: 163px;
     margin-bottom: 72px;
   }
 }
@@ -111,7 +112,7 @@
 
   &:after {
       position: absolute;
-      top: 24px;
+      top: 23px;
       left: 30px;
       width: 45px;
       height: 50px;
@@ -161,13 +162,13 @@
 
 .programs__item--pro {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
 
   &:after {
       position: absolute;
-      top: 38px;
-      left: 13px;
+      top: 35px;
+      left: 12px;
       width: 70px;
       height: 30px;
       content: "";
@@ -198,8 +199,7 @@
 @media (min-width: @desktop-width) {
   .programs__item--pro {
     position: relative;
-    margin-bottom: 65px;
-
+    margin-bottom: 73px;
 
     &:after {
         position: absolute;
@@ -216,7 +216,7 @@
 
 .programs__item-info {
   .p-reset();
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 
   font-family: 'Arial';
 
@@ -253,7 +253,8 @@
 
 .programs__item-link {
   display: inline-block;
-  padding: 20px 0px;
+  padding: 18px 0px;
+  padding-bottom: 23px;
   position: relative;
 
   text-decoration: none;
@@ -266,7 +267,7 @@
     color: @link-color;
 
     .programs__item-link-icon {
-      left: 100px;
+      left: 96px;
       width: 32px;
     }
   }
@@ -275,45 +276,81 @@
     color: @text-color-active;
 
   .programs__item-link-icon {
-      left: 100px;
+      left: 96px;
       width: 32px;
       opacity: 0.3;
   }
  }
 }
 
+
 @media (min-width: @tablet-width) {
   .programs__item-link {
     font-size: 20px;
     line-height: 20px;
+    padding: 17px 0px;
+    padding-top: 22px;
+
+    &:hover {
+      color: @link-color;
+
+      .programs__item-link-icon {
+        left: 130px;
+        width: 32px;
+      }
+    }
+
+    &:active {
+      color: @text-color-active;
+
+    .programs__item-link-icon {
+        left: 130px;
+        width: 32px;
+        opacity: 0.3;
+    }
+   }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs__item-link {
+    padding-top: 17px;
   }
 }
 
 .programs__item-link-icon {
   position: absolute;
   top: 23px;
-  left: 100px;
+  left: 96px;
   width: 25px;
   height: 10px;
   color: #3F4242;
 }
 
+.programs__item-link-pro .programs__item-link-icon {
+    top: 22px;
+    left: 95px;
+}
+
 @media (min-width: @tablet-width) {
   .programs__item-link-icon {
-    left: 135px;
+    top: 25px;
+    left: 133px;
   }
 
-.programs__item-link {
-  &:hover {
-    .programs__item-link-icon {
-      left: 130px;
-    }
+  .programs__item-link-pro .programs__item-link-icon {
+      top: 25px;
+      left: 127px;
   }
-
-  &:active {
-  .programs__item-link-icon {
-      left: 130px;
-  }
- }
 }
+
+@media (min-width: @desktop-width) {
+  .programs__item-link-icon {
+    top: 21px;
+    left: 130px;
+  }
+
+  .programs__item-link-pro .programs__item-link-icon {
+      left: 125px;
+  }
 }
