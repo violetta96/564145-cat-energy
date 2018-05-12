@@ -1,57 +1,79 @@
 .promo {
-  width: 320px;
-  margin: 0 auto;
   margin-bottom: 22px;
 
-  background-image: url(../img/index-background-mobile@1x.jpg);
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .promo {
-    width: 708px;
-    height: 875px;
-    margin: 0px;
-    margin-bottom: 0px;
-    padding-left: 90px;
+    height: 840px;
+    margin: 0;
 
-    background-image: url(../img/index-can-tablet.png);
-    background-position: 35% 100%;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-position: 50% 100%;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+      background-size: 709px auto;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .promo {
+    margin: 0 auto;
     width: 1440px;
     height: 700px;
-    margin-bottom: 80px;
-    margin-top: -110px;
-    padding-left: 80px;
+    margin-bottom: 75px;
+    margin-top: -116px;
 
-    background-image: url(../img/index-background-desktop.jpg);
+    background: linear-gradient(to right, #ffffff 52.7%, #64a83c 47.3%);
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
     background-position: right top;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/index-background-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: 720px auto;
+    }
   }
 }
 
-@media (min-width: @desktop-width) {
-  .promo-wrapper {
+@media (min-width: @tablet-width) {
+  .promo__wrapper {
+    width: 619px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 600px;
+    margin-left: 88px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__wrapper {
+    width: 895px;
+    margin-left: 80px;
   }
 }
 
 .promo__title {
   .p-reset();
   padding-top: 25px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 
   color: #ffffff;
   text-align: center;
   font-size: 36px;
-  font-weight: normal;
   line-height: 36px;
   font-weight: 500;
 }
@@ -59,7 +81,7 @@
 @media (min-width: @tablet-width) {
   .promo__title {
     width: 415px;
-    padding-top: 65px;
+    padding-top: 30px;
     margin-bottom: 40px;
 
     color: @title-color;
@@ -73,17 +95,17 @@
   .promo__title {
     padding-top: 110px;
     margin-top: 110px;
+    margin-bottom: 42px;
   }
 }
 
 .promo__slogan {
   .p-reset();
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  font-weight: normal;
   line-height: 14px;
   font-weight: 500;
 }
@@ -91,7 +113,7 @@
 @media (min-width: @tablet-width) {
   .promo__slogan {
     width: 290px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
 
     color: inherit;
     font-size: 20px;
@@ -102,7 +124,7 @@
 
 @media (min-width: @desktop-width) {
   .promo__slogan {
-    margin-bottom: 51px;
+    margin-bottom: 52px;
   }
 }
 
@@ -116,25 +138,27 @@
   .promo__picture {
     display: block;
     order: 4;
-    margin-left: -195px;
+    margin-left: -45px;
   }
 
   .promo__img {
     display: inline-block;
-    width: 522px;
-    margin-top: 145px;
+    width: auto;
+    margin-top: 140px;
   }
 }
 
 .promo__btn {
+  margin-top: 0;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .promo__btn {
     width: 245px;
-    padding: 15px 0px;
+    padding: 15px 0;
+    margin-top: 0;
 
     font-size: 20px;
     line-height: 20px;

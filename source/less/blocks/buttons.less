@@ -1,7 +1,7 @@
 .btn {
   display: inline-block;
   width: 280px;
-  padding: 10px 0px;
+  padding: 10px 0;
 
   border: none;
   background-color: @btn-color;
@@ -11,22 +11,21 @@
   text-align: center;
   text-decoration: none;
   font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @btn-color-active;
+  }
 
   &:active {
     background-color: @btn-color-active;
-    color: @btn-text-color-active;
+    color: @contrast-text-color-active;
   }
 }
 
 @media (min-width: @tablet-width) {
   .btn {
     width: 245px;
-    padding: 15px 0px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .btn {
-
+    padding: 15px 0;
   }
 }
