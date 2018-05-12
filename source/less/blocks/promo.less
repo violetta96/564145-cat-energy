@@ -35,10 +35,14 @@
     margin-top: -116px;
 
     background: linear-gradient(to right, #ffffff 52.7%, #64a83c 47.3%);
-    background: url("../img/index-background-desktop@1x.jpg") no-repeat right top;
+    background: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background: url("../img/index-background-desktop@2x.jpg") no-repeat right top;
+      background: url("../img/index-background-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: right top;
       background-size: 720px auto;
     }
   }
@@ -70,7 +74,7 @@
   color: #ffffff;
   text-align: center;
   font-size: 36px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 36px;
   font-weight: 500;
 }
@@ -103,7 +107,7 @@
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 14px;
   font-weight: 500;
 }
