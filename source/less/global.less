@@ -1,20 +1,12 @@
 body {
   color: @text-color;
-  font-family: 'Oswald', 'Arial', sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
 
   background-color: @background-color;
 }
-
-@media (min-width: @desktop-width) {
-  .main-body {
-    margin: 0px auto;
-    width: 1440px;
-  }
-}
-
 
 img {
   max-width: 100%;
@@ -38,6 +30,46 @@ img {
   .container {
     width: 1220px;
     padding: 0 110px;
+  }
+}
+
+.header-container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .header-container {
+    width: 706px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-container {
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
+
+.footer__contacts-container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .footer__contacts-container {
+    width: 706px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer__contacts-container {
+    width: 570px;
+    padding: 0;
   }
 }
 
