@@ -85,7 +85,7 @@
               <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__item-link main-nav__item-link-active" href="#">Подбор программы</a>
+              <a class="main-nav__item-link main-nav__item-link--active" href="#">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -98,7 +98,7 @@
           <h1 class="select__title">Подбор программы</h1>
           <p class="select__info">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <form class="select__form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="field-wrapper">
+            <div class="field__wrapper">
               <fieldset class="field field--cat">
                 <p class="field__item fiels__item--cat">
                   <label for="field-name" class="field-label field-label--cat">Имя:*</label>
@@ -131,8 +131,8 @@
               </fieldset>
             </div>
             <fieldset class="field field--contacts">
-              <legend class="field-legend field-legend--contacts">Контактные данные (владельца кота)</legend>
-              <div class="field-wrapper">
+              <legend class="field__legend field__legend--contacts">Контактные данные (владельца кота)</legend>
+              <div class="field__wrapper">
                 <p class="field__item field__item--contacts-email">
                   <label for="field-email" class="field-label field-label--contacts">E-mail:*</label>
                   <input id="field-email" class="fiels__text fiels__text--contacts" type="email" name="email" value="" placeholder="Kuklachev@gmail.com" required="required">
@@ -150,13 +150,13 @@
               </div>
             </fieldset>
             <fieldset class="field field--comment">
-              <legend class="field-legend field-legend--comment">Комментарий</legend>
+              <legend class="field__legend field__legend--comment">Комментарий</legend>
               <p class="field__item">
                 <textarea class="field__comment" id="field-comment" name="comment" rows="8" cols="44" placeholder="Расскажите обо всех повадках кота" required="required"></textarea>
               </p>
             </fieldset>
             <fieldset class="field field--add">
-              <legend class="field-legend field-legend--add">Дополнительно</legend>
+              <legend class="field__legend field__legend--add">Дополнительно</legend>
               <ul class="field__list field__list--add">
                 <li class="field__option field__option--add">
                   <input id="sweetener" class="visually-hidden field-check" type="checkbox" name="field-additional" value="sweetener" checked="checked">
@@ -268,6 +268,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/picturefill.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

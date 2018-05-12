@@ -81,13 +81,13 @@
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__item-link contrast-link-active" href="#">Главная</a>
+              <a class="main-nav__item-link main-nav__item-link--active main-nav__item-link--contrast main-nav__item-link--contrast-active" href="#">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__item-link contrast-link" href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__item-link main-nav__item-link--contrast" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__item-link contrast-link" href="form.html">Подбор программы</a>
+              <a class="main-nav__item-link main-nav__item-link--contrast" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -98,7 +98,7 @@
       <h1 class="visually-hidden">Магазин "Кэт энерджи"</h1>
       <section class="promo">
         <div class="container">
-          <div class="promo-wrapper">
+          <div class="promo__wrapper">
             <h2 class="promo__title">
               Функциональное питание для котов
             </h2>
@@ -121,11 +121,11 @@
         <section class="programs">
           <h2 class="visually-hidden">Программы "Кэт энерджи"</h2>
           <ul class="progams__list">
-            <li class="programs__item programs__item--slim">
+            <li class="programs__item programs__item-slim">
               <h3 class="programs__item-title">
                 Похудение
               </h3>
-              <p class="programs__item-info programs__item-info--slim">
+              <p class="programs__item-info programs__item-info-slim">
                 Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
               </p>
               <a class="programs__item-link" href="catalog.html">Каталог Slim
@@ -134,11 +134,11 @@
                 </svg>
               </a>
             </li>
-            <li class="programs__item programs__item--pro">
+            <li class="programs__item programs__item-pro">
               <h3 class="programs__item-title">
                 Набор массы
               </h3>
-              <p class="programs__item-info programs__item-info--pro">
+              <p class="programs__item-info programs__item-info-pro">
                 Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
               <a class="programs__item-link programs__item-link-pro" href="catalog.html">Каталог Pro
@@ -157,17 +157,17 @@
             Как это работает
           </h2>
           <ul class="instructions__list">
-            <li class="instructions__item instructions__item--eco">
-              <p class="instructions__info instructions__info--eco">Функциональное питание содержит только полезные питательные вещеcтва.</p>
+            <li class="instructions__item instructions__item-eco">
+              <p class="instructions__info instructions__info-eco">Функциональное питание содержит только полезные питательные вещеcтва.</p>
             </li>
-            <li class="instructions__item instructions__item--water">
-              <p class="instructions__info instructions__info--water">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            <li class="instructions__item instructions__item-water">
+              <p class="instructions__info instructions__info-water">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
-            <li class="instructions__item instructions__item--eat">
-              <p class="instructions__info instructions__info--eat">Замените один-два приема обычной еды на наше функциональное питание.</p>
+            <li class="instructions__item instructions__item-eat">
+              <p class="instructions__info instructions__info-eat">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
-            <li class="instructions__item instructions__item--time">
-              <p class="instructions__info instructions__info--time">Уже через месяц насдаждайтесь изменeниями к <span class="info-time">лучшему</span> вашего питомца!</p>
+            <li class="instructions__item instructions__item-time">
+              <p class="instructions__info instructions__info-time">Уже через месяц насдаждайтесь изменeниями к <span class="info-time">лучшему</span> вашего питомца!</p>
             </li>
           </ul>
         </section>
@@ -175,18 +175,18 @@
 
       <section class="demo">
         <div class="container">
-          <div class="demo-wrapper">
+          <div class="demo__wrapper">
             <h2 class="demo__title">Живой пример</h2>
             <p class="demo__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
             <div class="demo__result">
-              <ul class="result__list">
-                <li class="result__item result__item--weight">
-                  <span class="result__item-number">5 кг</span>
-                  <small class="result__item-info result__item-info--weight">снижение веса</small>
+              <ul class="demo__list">
+                <li class="demo__item demo__item--weight">
+                  <span class="demo__item-number">5 кг</span>
+                  <small class="demo__item-info demo__item-info--weight">снижение веса</small>
                 </li>
-                <li class="result__item result__item--time">
-                  <span class="result__item-number">60 дней</span>
-                  <small class="result__item-info result__item-info--time">затрачено времени</small>
+                <li class="demo__item demo__item--time">
+                  <span class="demo__item-number">60 дней</span>
+                  <small class="demo__item-info demo__item-info--time">затрачено времени</small>
                 </li>
               </ul>
               <p class="demo__cost">
@@ -194,15 +194,31 @@
                 <span class="demo__cost--rub">15 000 руб.</span>
               </p>
             </div>
-            <div class="demo-progress">
-              <div class="demo-progress__img-wrapper">
-                <div class="demo-progress__img demo-progress__img-before"></div>
-                <div class="demo-progress__img demo-progress__img-after"></div>
+            <div class="demo__progress">
+              <div class="demo__progress-img-wrapper">
+                <picture class="demo__progress-img demo__progress-img-before">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                    <img class="demo__progress-image-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Пример до">
+                </picture>
+                <picture class="demo__progress-img demo__progress-img-after">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                    <img class="demo__progress-image-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Пример после">
+                </picture>
               </div>
-              <div class="demo-progress__btn">
+              <div class="demo__progress-btn">
                 <button class="btn__result btn__result--before" type="button" name="button">Было</button>
-                <div class="demo-progress__bar">
-                  <span class="demo-progress__toggle"></span>
+                <div class="demo__progress-bar">
+                  <span class="demo__progress-toggle"></span>
                 </div>
                 <button class="btn__result btn__result--after" type="button" name="button">Стало</button>
               </div>
@@ -295,6 +311,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/picturefill.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

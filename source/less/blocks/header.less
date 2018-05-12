@@ -121,7 +121,7 @@
     }
   }
 
-  .main-nav__item-link-active {
+  .main-nav__item-link--active {
     padding: 10px 0px;
 
     font-size: 18px;
@@ -137,18 +137,6 @@
       color: @link-color;
     }
   }
-
-  .contrast-link-active {
-    border-bottom: 2px solid @decoration-line-color;
-
-    &:hover {
-      color: @link-color;
-    }
-
-    &:active {
-      color: @link-color;
-    }
-}
 }
 
 @media (min-width: @desktop-width) {
@@ -156,12 +144,12 @@
     font-size: 20px;
   }
 
-  .main-nav__item-link-active {
+  .main-nav__item-link--active {
     font-size: 20px;
   }
 
 
-  .contrast-link {
+  .main-nav__item-link--contrast {
     color: @contrast-line-color;
     font-size: 20px;
 
@@ -173,7 +161,7 @@
       color: @contrast-text-color-active;
     }
   }
-  .contrast-link-active {
+  .main-nav__item-link--contrast-active {
     color: @contrast-line-color;
     border-bottom: 2px solid @contrast-line-color;
     font-size: 20px;
