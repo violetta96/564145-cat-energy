@@ -5,22 +5,22 @@
   margin-bottom: 30px;
 
   background-color: #64a83c;
-  background: url(../img/gift-photo-mobile@1x.jpg) no-repeat top center;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat top center;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background: url(../img/gift-photo-mobile@2x.jpg) no-repeat right top;
+    background: url("../img/gift-photo-mobile@2x.jpg") no-repeat right top;
     background-size: 280px auto;
   }
 
-  &:before {
-      position: absolute;
-      top: 65px;
-      right: 112px;
-      width: 55px;
-      height: 60px;
-      content: "";
+  &::before {
+    position: absolute;
+    top: 65px;
+    right: 112px;
+    width: 55px;
+    height: 60px;
+    content: "";
 
-      background: url(../img/icon-gift.svg) no-repeat 0 0;
+    background: url("../img/icon-gift.svg") no-repeat 0 0;
   }
 }
 
@@ -30,22 +30,22 @@
     width: 706px;
     margin-bottom: 75px;
 
-    background-image: url(../img/gift-photo-tablet@1x.jpg);
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background: url(../img/gift-photo-tablet@2x.jpg) no-repeat right top;
+      background: url("../img/gift-photo-tablet@2x.jpg") no-repeat right top;
       background-size: 708px auto;
     }
 
-    &:before {
-        position: absolute;
-        top: 65px;
-        left: 90px;
-        width: 55px;
-        height: 60px;
-        content: "";
+    &::before {
+      position: absolute;
+      top: 65px;
+      left: 90px;
+      width: 55px;
+      height: 60px;
+      content: "";
 
-        background: url(../img/icon-gift.svg) no-repeat 0 0;
+      background: url("../img/icon-gift.svg") no-repeat 0 0;
     }
   }
 }
@@ -58,16 +58,16 @@
     margin-bottom: 85px;
 
 
-    background-image: url(../img/gift-photo-desktop@1x.jpg);
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background: url(../img/gift-photo-desktop@2x.jpg) no-repeat right top;
+      background: url("../img/gift-photo-desktop@2x.jpg") no-repeat right top;
       background-size: 245px auto;
     }
 
     &:before {
-        top: 65px;
-        left: 97px;
+      top: 65px;
+      left: 97px;
     }
   }
 }
@@ -75,10 +75,10 @@
 .gift-banner__discripton {
   position: absolute;
   bottom: 45px;
-  left: 0px;
-  margin: 0px 55px;
+  left: 0;
+  margin: 0 55px;
 
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -93,13 +93,14 @@
   .gift-banner__discripton {
     bottom: 70px;
     left: 423px;
-    margin: 0px;
+    margin: 0;
     width: 165px;
 
     text-align: left;
   }
+
   .gift-banner-info {
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
 
@@ -107,7 +108,7 @@
   .gift-banner__discripton {
     bottom: 44px;
     left: 40px;
-    margin: 0px;
+    margin: 0;
 
     text-align: center;
   }

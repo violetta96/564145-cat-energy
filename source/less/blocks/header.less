@@ -2,14 +2,12 @@
   border-bottom: 1px solid @border-color;
 }
 
-
-
 @media (min-width: @tablet-width) {
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0px;
+    padding: 25px 0;
     padding-top: 25px;
 
     border-bottom: none;
@@ -18,9 +16,9 @@
 
 @media (min-width: @desktop-width) {
   .header {
-    padding: 0px 0px;
+    padding: 0;
     padding-top: 55px;
-    margin: 0px;
+    margin: 0;
 
     border-bottom: none;
   }
@@ -28,7 +26,7 @@
 
 @media (max-width: @mobile-width-only) {
   .logo {
-    padding: 11px 0px;
+    padding: 11px 0;
     padding-bottom: 12px;
     padding-left: 20px;
   }
@@ -36,16 +34,18 @@
   .logo__mobile {
     width: 190px;
     height: 40px;
-    }
+  }
 
 }
 
 @media (min-width: @tablet-width) {
   .logo__mobile {
     width: 175px;
+
     &:hover {
       opacity: 0.6;
     }
+
     &:active {
       opacity: 0.3;
     }
@@ -53,12 +53,14 @@
 }
 
 @media (min-width: @desktop-width) {
-  .logo__mobile{
+  .logo__mobile {
     width: 202px;
     height: 59px;
+
     &:hover {
       opacity: 0.6;
     }
+
     &:active {
       opacity: 0.3;
     }
@@ -96,7 +98,7 @@
 
 .main-nav__item-link {
   display: inline-block;
-  padding: 22px 0px;
+  padding: 22px 0;
 
   font-size: 20px;
   line-height: 20px;
@@ -108,7 +110,7 @@
 
 @media (min-width: @tablet-width) {
   .main-nav__item-link {
-    padding: 10px 0px;
+    padding: 10px 0;
     font-size: 18px;
     line-height: 24px;
 
@@ -122,7 +124,7 @@
   }
 
   .main-nav__item-link--active {
-    padding: 10px 0px;
+    padding: 10px 0;
 
     font-size: 18px;
     line-height: 24px;
@@ -161,6 +163,7 @@
       color: @contrast-text-color-active;
     }
   }
+
   .main-nav__item-link--contrast-active {
     color: @contrast-line-color;
     border-bottom: 2px solid @contrast-line-color;
@@ -192,7 +195,7 @@
 
 .main-nav--open {
   .main-nav__burger {
-    background: url(../img/icon-close.svg) no-repeat 0 0;
+    background: url("../img/icon-close.svg") no-repeat 0 0;
   }
 }
 
@@ -200,7 +203,7 @@
   .main-nav__burger {
     width: 24px;
     height: 18px;
-    background: url(../img/icon-mobile-menu.svg) no-repeat 0 0;
+    background: url("../img/icon-mobile-menu.svg") no-repeat 0 0;
   }
 }
 
@@ -222,6 +225,7 @@
   }
 
   .main-nav--close {
+
     .main-nav__list  {
       display: none;
     }
@@ -239,7 +243,7 @@
   }
 
   .main-nav--nojs .main-nav__burger {
-    background: url(../img/icon-close.svg) no-repeat 0 0;
+    background: url("../img/icon-close.svg") no-repeat 0 0;
     bottom: 219px;
     width: 18px;
   }

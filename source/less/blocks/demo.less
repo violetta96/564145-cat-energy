@@ -1,29 +1,29 @@
 .demo {
-  padding: 17px 0px;
+  padding: 17px 0;
   padding-bottom: 35px;
   background-color: @blocks-background-color;
 }
 
 @media (min-width: @tablet-width) {
   .demo {
-    margin: 0px auto;
+    margin: 0 auto;
     width: 768px;
     padding-top: 45px;
     padding-bottom: 68px;
 
-    background: linear-gradient(@background-color 57.5%,@blocks-background-color 30%);
+    background: linear-gradient(@background-color 57.5%, @blocks-background-color 30%);
     border-top: 1px solid @border-color;
   }
 }
 
 @media (min-width: @desktop-width) {
   .demo {
-    margin: 0px auto;
+    margin: 0 auto;
     width: 1440px;
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 78px;
 
-    background: linear-gradient(@background-color 29%,@blocks-background-color 30%);
+    background: linear-gradient(@background-color 29%, @blocks-background-color 30%);
     border-top: none;
   }
 
@@ -62,7 +62,7 @@
 
 .demo__description {
   .p-reset();
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
   margin-right: 10px;
   margin-bottom: 25px;
 }
@@ -79,7 +79,7 @@
 @media (min-width: @desktop-width) {
   .demo__description {
     width: 435px;
-    margin-right: 0px;
+    margin-right: 0;
     margin-bottom: 65px;
   }
 }
@@ -88,7 +88,6 @@
   .demo__result {
     display: flex;
     margin-bottom: 85px;
-
   }
 }
 
@@ -96,7 +95,7 @@
   .demo__result {
     display: flex;
     flex-direction: column;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     width: 365px;
   }
 }
@@ -109,7 +108,7 @@
 
 @media (min-width: @tablet-width) {
   .demo__list {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     width: 365px;
   }
 }
@@ -128,7 +127,6 @@
   border-radius: 3px;
 
   text-align: center;
-
 }
 
 .demo__item--weight {
@@ -166,7 +164,6 @@
   .demo__item--time {
     padding: 15px 22px;
     padding-bottom: 17px;
-
   }
 }
 
@@ -175,7 +172,6 @@
   font-size: 24px;
   color: @title-color;
   text-transform: uppercase;
-
 }
 
 @media (min-width: @tablet-width) {
@@ -185,18 +181,16 @@
   }
 }
 
-
-
 .demo__item-info {
   position: absolute;
   top: 46px;
   left: 16px;
   width: 58px;
-  padding: 0px 15px;
+  padding: 0 15px;
 
   background-color: @blocks-background-color;
 
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
   line-height: 12px;
   font-size: 12px;
   color: @text-color;
@@ -213,7 +207,7 @@
     top: 61px;
     left: 22px;
     width: 100px;
-    padding: 0px 8px;
+    padding: 0 8px;
 
     background-color: @background-color;
 
@@ -234,7 +228,7 @@
   }
 }
 
-.demo__cost{
+.demo__cost {
   .p-reset();
   margin-bottom: 35px;
 
@@ -244,10 +238,10 @@
 }
 
 @media (min-width: @tablet-width) {
-  .demo__cost{
+  .demo__cost {
     width: 175px;
     margin-left: 166px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 
     font-size: 20px;
     line-height: 30px;
@@ -257,11 +251,11 @@
 }
 
 @media (min-width: @desktop-width) {
-  .demo__cost{
+  .demo__cost {
     width: 335px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-top: 0;
 
     font-size: 20px;
     line-height: 20px;
@@ -280,7 +274,8 @@
 @media (min-width: @tablet-width) {
   .demo__progress {
     width: 708px;
-}
+  }
+
   .demo__progress-img-wrapper {
     min-width: 690px;
     min-height: 531px;
@@ -291,7 +286,7 @@
     position: absolute;
     overflow: hidden;
 
-    background: linear-gradient(#fff 32.8%,#f2f2f2 30%);
+    background: linear-gradient(#ffffff 32.8%, #f2f2f2 30%);
   }
 }
 
@@ -307,20 +302,20 @@
   }
 
   .demo__progress-img {
-    background: linear-gradient(#fff 37%,#f2f2f2 30%);
+    background: linear-gradient(#ffffff 37%, #f2f2f2 30%);
   }
 }
 
 .demo__progress-image-before {
-    max-width: 400px;
-    margin-left: -20px;
+  max-width: 400px;
+  margin-left: -20px;
 }
 
 @media (min-width: @tablet-width) {
   .demo__progress-img-before {
-      z-index: 5;
-      width: 50%;
-      bottom: 8px;
+    z-index: 5;
+    width: 50%;
+    bottom: 8px;
   }
 
   .demo__progress-image-before {
@@ -331,9 +326,9 @@
 
 @media (min-width: @desktop-width) {
   .demo__progress-img-before {
-      z-index: 5;
-      width: 50%;
-      bottom: 8px;
+    z-index: 5;
+    width: 50%;
+    bottom: 8px;
   }
 
   .demo__progress-image-before {
@@ -348,8 +343,8 @@
 
 @media (min-width: @tablet-width) {
   .demo__progress-img-after {
-      z-index: 1;
-      bottom: 10px;
+    z-index: 1;
+    bottom: 10px;
   }
 
   .demo__progress-image-after {
@@ -361,8 +356,8 @@
 
 @media (min-width: @desktop-width) {
   .demo__progress-img-after {
-      z-index: 1;
-      bottom: 10px;
+    z-index: 1;
+    bottom: 10px;
   }
 
   .demo__progress-image-after {
@@ -376,22 +371,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 43px;
+  margin: 0 43px;
   margin-right: 38px;
-  margin-top: 10px
+  margin-top: 10px;
 }
 
 @media (min-width: @tablet-width) {
   .demo__progress-btn {
     width: 570px;
-    margin: 0px 70px;
+    margin: 0 70px;
     margin-top: 4px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .demo__progress-btn {
-    margin: 0px;
+    margin: 0;
     margin-top: 25px;
     margin-left: 40px;
   }
@@ -412,11 +407,11 @@
 }
 
 .btn__result--before {
-  padding: 0px;
+  padding: 0;
 }
 
 .btn__result--after {
-  padding: 0px;
+  padding: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -425,7 +420,7 @@
   }
 
   .btn__result--before {
-    padding: 5px 0px;
+    padding: 5px 0;
 
     border-bottom: 1px dotted @border-darker-color;
 
@@ -439,7 +434,7 @@
   }
 
   .btn__result--after {
-    padding: 5px 0px;
+    padding: 5px 0;
 
     border-bottom: 1px dotted @border-darker-color;
 
@@ -466,8 +461,8 @@
   .demo__progress-bar {
     display: flex;
     justify-content: center;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     height: 4px;
     width: 430px;
 
@@ -498,13 +493,13 @@
     box-shadow: 0 0 0 1px @border-darker-color;
 
     &:hover {
-      box-shadow: 0px 3px 5px 0px @border-darker-color,
+      box-shadow: 0 3px 5px 0 @border-darker-color,
                   0 0 0 1px @border-darker-color;
     }
 
     &:active {
       box-shadow: 0 0 0 2px rgb(104, 183, 56),
-                  0px 4px 5px 0px @border-darker-color,
+                  0 4px 5px 0 @border-darker-color,
                   0 0 0 1px @border-darker-color;
     }
   }

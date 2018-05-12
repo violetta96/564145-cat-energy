@@ -17,16 +17,16 @@
 
   background-color: @blocks-background-color;
 
-  &:before {
-      position: absolute;
-      top: 26px;
-      left: 22px;
-      width: 50px;
-      height: 50px;
-      content: "";
-      border-radius: 50%;
+  &::before {
+    position: absolute;
+    top: 26px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    content: "";
+    border-radius: 50%;
 
-      background-color: @icon-background-color;
+    background-color: @icon-background-color;
   }
 }
 
@@ -39,16 +39,16 @@
     padding-right: 58px;
     padding-bottom: 45px;
 
-    &:before {
-        position: absolute;
-        top: 90px;
-        left: 445px;
-        width: 200px;
-        height: 200px;
-        content: "";
-        border-radius: 50%;
+    &::before {
+      position: absolute;
+      top: 90px;
+      left: 445px;
+      width: 200px;
+      height: 200px;
+      content: "";
+      border-radius: 50%;
 
-        background-color: @icon-background-color;
+      background-color: @icon-background-color;
     }
   }
 }
@@ -62,16 +62,16 @@
     padding-left: 52px;
     padding-right: 53px;
 
-    &:before {
-        position: absolute;
-        top: 45px;
-        left: 52px;
-        width: 100px;
-        height: 100px;
-        content: "";
-        border-radius: 50%;
+    &::before {
+      position: absolute;
+      top: 45px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+      content: "";
+      border-radius: 50%;
 
-        background-color: @icon-background-color;
+      background-color: @icon-background-color;
     }
   }
 }
@@ -91,7 +91,7 @@
 @media (min-width: @tablet-width) {
   .programs__item-title {
     width: 375px;
-    padding-left: 0px;
+    padding-left: 0;
     margin-bottom: 25px;
 
     font-size: 36px;
@@ -110,15 +110,15 @@
   position: relative;
 
 
-  &:after {
-      position: absolute;
-      top: 23px;
-      left: 30px;
-      width: 45px;
-      height: 50px;
-      content: "";
+  &::after {
+    position: absolute;
+    top: 23px;
+    left: 30px;
+    width: 45px;
+    height: 50px;
+    content: "";
 
-      background: url(../img/icon-cat-slim.svg) no-repeat 0 0;
+    background: url("../img/icon-cat-slim.svg") no-repeat 0 0;
   }
 }
 
@@ -127,15 +127,15 @@
     position: relative;
 
 
-    &:after {
-        position: absolute;
-        top: 80px;
-        left: 478px;
-        width: 163px;
-        height: 192px;
-        content: "";
+    &::after {
+      position: absolute;
+      top: 80px;
+      left: 478px;
+      width: 163px;
+      height: 192px;
+      content: "";
 
-        background: url(../img/icon-cat-slim.svg) no-repeat 0 0;
+      background: url("../img/icon-cat-slim.svg") no-repeat 0 0;
     }
   }
 }
@@ -146,15 +146,15 @@
 
 
 
-    &:after {
-        position: absolute;
-        top: 41px;
-        left: 66px;
-        width: 73px;
-        height: 97px;
-        content: "";
+    &::after {
+      position: absolute;
+      top: 41px;
+      left: 66px;
+      width: 73px;
+      height: 97px;
+      content: "";
 
-        background: url(../img/icon-cat-slim.svg) no-repeat 0 0;
+      background: url("../img/icon-cat-slim.svg") no-repeat 0 0;
     }
   }
 }
@@ -165,15 +165,15 @@
   margin-bottom: 17px;
 
 
-  &:after {
-      position: absolute;
-      top: 35px;
-      left: 12px;
-      width: 70px;
-      height: 30px;
-      content: "";
+  &::after {
+    position: absolute;
+    top: 35px;
+    left: 12px;
+    width: 70px;
+    height: 30px;
+    content: "";
 
-      background: url(../img/icon-cat-pro.svg) no-repeat 0 0;
+    background: url("../img/icon-cat-pro.svg") no-repeat 0 0;
   }
 }
 
@@ -183,15 +183,15 @@
     margin-bottom: 45px;
 
 
-    &:after {
-        position: absolute;
-        top: 132px;
-        left: 413px;
-        width: 270px;
-        height: 112px;
-        content: "";
+    &::after {
+      position: absolute;
+      top: 132px;
+      left: 413px;
+      width: 270px;
+      height: 112px;
+      content: "";
 
-        background: url(../img/icon-cat-pro.svg) no-repeat 0 0;
+      background: url("../img/icon-cat-pro.svg") no-repeat 0 0;
     }
   }
 }
@@ -201,15 +201,15 @@
     position: relative;
     margin-bottom: 73px;
 
-    &:after {
-        position: absolute;
-        top: 70px;
-        left: 34px;
-        width: 135px;
-        height: 56px;
-        content: "";
+    &::after {
+      position: absolute;
+      top: 70px;
+      left: 34px;
+      width: 135px;
+      height: 56px;
+      content: "";
 
-        background: url(../img/icon-cat-pro.svg) no-repeat 0 0;
+      background: url("../img/icon-cat-pro.svg") no-repeat 0 0;
     }
   }
 }
@@ -218,9 +218,9 @@
   .p-reset();
   padding-bottom: 23px;
 
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
 
-  border-bottom:1px solid @border-color;
+  border-bottom: 1px solid @border-color;
 }
 
 @media (min-width: @tablet-width) {
@@ -243,7 +243,6 @@
   .programs__item-info {
     width: 465px;
     padding-bottom: 15px;
-
   }
 
   .programs__item--pro .programs__item-info {
@@ -253,7 +252,7 @@
 
 .programs__item-link {
   display: inline-block;
-  padding: 18px 0px;
+  padding: 18px 0;
   padding-bottom: 23px;
   position: relative;
 
@@ -275,11 +274,11 @@
   &:active {
     color: @text-color-active;
 
-  .programs__item-link-icon {
+    .programs__item-link-icon {
       left: 96px;
       width: 32px;
       opacity: 0.3;
-  }
+    }
   }
 }
 
@@ -288,7 +287,7 @@
   .programs__item-link {
     font-size: 20px;
     line-height: 20px;
-    padding: 17px 0px;
+    padding: 17px 0;
     padding-top: 22px;
 
     &:hover {
@@ -303,11 +302,11 @@
     &:active {
       color: @text-color-active;
 
-    .programs__item-link-icon {
+      .programs__item-link-icon {
         left: 130px;
         width: 32px;
         opacity: 0.3;
-    }
+      }
     }
   }
 }
@@ -324,12 +323,12 @@
   left: 96px;
   width: 25px;
   height: 10px;
-  color: #3F4242;
+  color: @icon-color;
 }
 
 .programs__item-link-pro .programs__item-link-icon {
-    top: 22px;
-    left: 95px;
+  top: 22px;
+  left: 95px;
 }
 
 @media (min-width: @tablet-width) {
@@ -339,8 +338,8 @@
   }
 
   .programs__item-link-pro .programs__item-link-icon {
-      top: 25px;
-      left: 127px;
+    top: 25px;
+    left: 127px;
   }
 }
 
@@ -351,6 +350,6 @@
   }
 
   .programs__item-link-pro .programs__item-link-icon {
-      left: 125px;
+    left: 125px;
   }
 }
