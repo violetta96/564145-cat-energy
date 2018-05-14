@@ -229,7 +229,7 @@
   }
 }
 
-.main-catalog__show-more {
+.catalog__show-more {
   width: 280px;
   margin: 0 auto;
   padding: 25px 20px;
@@ -244,13 +244,14 @@
     left: 145px;
     width: 32px;
     height: 32px;
+    content: "";
 
-    background: url("../img/icon-plus.svg") no-repeat 0 0;
+    background: url("../img/icon-plus-mobile.svg") no-repeat 0 0;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .main-catalog__show-more {
+  .catalog__show-more {
     width: 250px;
     margin: 0;
     margin-top: 140px;
@@ -261,7 +262,6 @@
     border: 1px solid @border-color;
 
     &::before {
-      position: absolute;
       top: 54px;
       left: 132px;
       width: 60px;
@@ -273,7 +273,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-catalog__show-more {
+  .catalog__show-more {
     margin: 0;
     margin-top: 140px;
     width: 169px;
@@ -287,7 +287,7 @@
   }
 }
 
-.show-more__title {
+.catalog__show-more-title {
   .p-reset();
   margin-bottom: 8px;
 
@@ -300,7 +300,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .show-more__title {
+  .catalog__show-more-title {
     width: 140px;
     margin: 0 54px;
     margin-bottom: 22px;
@@ -310,14 +310,14 @@
 }
 
 @media (min-width: @desktop-width) {
-  .show-more__title {
+  .catalog__show-more-title {
     margin: 0;
     width: 171px;
     margin-bottom: 25px;
   }
 }
 
-.show-more__info {
+.catalog__show-more-info {
   .p-reset();
 
   font-family: "Arial", sans-serif;
@@ -327,7 +327,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .show-more__info {
+  .catalog__show-more-info {
     width: 170px;
     margin: 0 39px;
     font-size: 16px;
@@ -336,13 +336,13 @@
 }
 
 @media (min-width: @desktop-width) {
-  .show-more__info {
+  .catalog__show-more-info {
     width: 170px;
     margin: 0;
   }
 }
 
-.show-more__btn {
+.catalog__show-more-btn {
   display: inline-block;
   width: 280px;
   margin-top: 20px;
@@ -364,7 +364,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .show-more__btn {
+  .catalog__show-more-btn {
     width: 250px;
     margin-top: 84px;
     padding: 10px 0;
@@ -372,7 +372,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .show-more__btn {
+  .catalog__show-more-btn {
     width: 170px;
     margin-top: 83px;
   }
