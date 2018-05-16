@@ -1,0 +1,41 @@
+@media (max-width: @mobile-width-only) {
+  .logo {
+    padding: 11px 0;
+    padding-bottom: 12px;
+    padding-left: 20px;
+  }
+
+  .logo__mobile {
+    width: 190px;
+    height: 40px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .logo__mobile {
+    width: 175px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo__mobile {
+    width: 202px;
+    height: 59px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

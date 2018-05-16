@@ -133,8 +133,12 @@
   }
 }
 
+.add-catalog__item-link {
+  text-decoration: none;
+}
+
 @media (min-width: @tablet-width) {
-  .add-item__description {
+  .add-catalog__item-description {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -142,7 +146,7 @@
   }
 }
 
-.add-item__title {
+.add-catalog__item-title {
   .p-reset();
   margin: 10px 0;
 
@@ -154,7 +158,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .add-item__title {
+  .add-catalog__item-title {
     margin: 5px 0;
 
     line-height: 20px;
@@ -163,14 +167,14 @@
 }
 
 @media (min-width: @desktop-width) {
-  .add-item__title {
+  .add-catalog__item-title {
     margin: 5px 0;
     width: 245px;
     margin-right: 78px;
   }
 }
 
-.add-item__table {
+.add-catalog__item-table {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -179,7 +183,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .add-item__table {
+  .add-catalog__item-table {
     font-size: 16px;
     line-height: 20px;
     margin-right: -4px;
@@ -187,45 +191,45 @@
 }
 
 @media (min-width: @desktop-width) {
-  .add-item__table {
+  .add-catalog__item-table {
     width: 292px;
     margin-right: 35px;
   }
 }
 
-.add-item__table-data {
+.add-catalog__item-table-data {
   .p-reset();
   width: 140px;
 }
 
-.add-item__table-data:nth-of-type(2n) {
+.add-catalog__item-table-data:nth-of-type(2n) {
   text-align: right;
 }
 
 @media (min-width: @tablet-width) {
-  .add-item__table-data {
+  .add-catalog__item-table-data {
     width: 134px;
     text-align: right;
   }
 
-  .add-item__table-data:nth-of-type(2n) {
+  .add-catalog__item-table-data:nth-of-type(2n) {
     width: 67px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .add-item__table-data {
+  .add-catalog__item-table-data {
     width: 245px;
     text-align: left;
   }
 
-  .add-item__table-data:nth-of-type(2n) {
+  .add-catalog__item-table-data:nth-of-type(2n) {
     width: 44px;
     text-align: left;
   }
 }
 
-.add-catolog__btn {
+.add-catalog__btn {
   display: inline-block;
   margin-top: 12px;
   width: 280px;
@@ -236,7 +240,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .add-catolog__btn {
+  .add-catalog__btn {
     width: 632px;
     margin-top: 20px;
     padding: 10px 0;
@@ -244,7 +248,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .add-catolog__btn {
+  .add-catalog__btn {
     width: 245px;
     margin: 0;
     padding: 10px 0;

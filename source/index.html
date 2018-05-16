@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -17,7 +19,7 @@
         <div class="logo">
           <a class="logo__link">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
               <img class="logo__mobile" src="img/logo-mobile.svg" width="192" height="37" alt="Кэт энерджи">
             </picture>
@@ -54,10 +56,10 @@
               Занялся собой? Займись котом!
             </p>
             <picture class="promo__picture">
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
               <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
               <img class="promo__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy Pro 1000 г">
             </picture>
             <a class="btn promo__btn" href="form.html">Подобрать программу</a>
@@ -68,7 +70,7 @@
       <div class="container">
         <section class="programs">
           <h2 class="visually-hidden">Программы "Кэт энерджи"</h2>
-          <ul class="progams__list">
+          <ul class="programs__list">
             <li class="programs__item programs__item--slim">
               <h3 class="programs__item-title">
                 Похудение
@@ -115,61 +117,63 @@
               <p class="instructions__info instructions__info-eat">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="instructions__item instructions__item-time">
-              <p class="instructions__info instructions__info-time">Уже через месяц насдаждайтесь изменeниями к <span class="info-time">лучшему</span> вашего питомца!</p>
+              <p class="instructions__info instructions__info-time">Уже через месяц насдаждайтесь изменeниями к <span class="instructions__info-time">лучшему</span> вашего питомца!</p>
             </li>
           </ul>
         </section>
       </div>
 
       <section class="demo">
+        <h2 class="demo__title">Живой пример</h2>
         <div class="container">
           <div class="demo__wrapper">
-            <h2 class="demo__title">Живой пример</h2>
-            <p class="demo__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <div class="demo__result">
-              <ul class="demo__list">
-                <li class="demo__item demo__item--weight">
-                  <span class="demo__item-number">5 кг</span>
-                  <small class="demo__item-info demo__item-info--weight">снижение веса</small>
-                </li>
-                <li class="demo__item demo__item--time">
-                  <span class="demo__item-number">60 дней</span>
-                  <small class="demo__item-info demo__item-info--time">затрачено времени</small>
-                </li>
-              </ul>
-              <p class="demo__cost">
-                <span class="demo__cost--info">Затраты на питание:</span>
-                <span class="demo__cost--rub">15 000 руб.</span>
-              </p>
+              <div class="demo-container">
+              <p class="demo__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <div class="demo__result">
+                <ul class="demo__list">
+                  <li class="demo__item demo__item--weight">
+                    <span class="demo__item-number">5 кг</span>
+                    <small class="demo__item-info demo__item-info--weight">снижение веса</small>
+                  </li>
+                  <li class="demo__item demo__item--time">
+                    <span class="demo__item-number">60 дней</span>
+                    <small class="demo__item-info demo__item-info--time">затрачено времени</small>
+                  </li>
+                </ul>
+                <p class="demo__cost">
+                  <span class="demo__cost-info">Затраты на питание:</span>
+                  <span class="demo__cost-rub">15 000 руб.</span>
+                </p>
+              </div>
             </div>
             <div class="demo__progress">
-              <div class="demo__progress-img-wrapper">
-                <picture class="demo__progress-img demo__progress-img-before">
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+                <div class="demo__progress-img-wrapper">
+                  <picture class="demo__progress-img demo__progress-img-before">
+                      <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-                    <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                    <img class="demo__progress-image-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Пример до">
-                </picture>
-                <picture class="demo__progress-img demo__progress-img-after">
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                      <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                      <img class="demo__progress-image-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Пример до">
+                  </picture>
+                  <picture class="demo__progress-img demo__progress-img-after">
+                      <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
-                    <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                    <img class="demo__progress-image-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Пример после">
-                </picture>
-              </div>
-              <div class="demo__progress-btn">
-                <button class="btn__result btn__result--before" type="button" name="button">Было</button>
-                <div class="demo__progress-bar">
-                  <span class="demo__progress-toggle"></span>
+                      <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                      <img class="demo__progress-image-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Пример после">
+                  </picture>
                 </div>
-                <button class="btn__result btn__result--after" type="button" name="button">Стало</button>
-              </div>
+                <div class="demo__progress-btn">
+                  <button class="demo__progress-btn-result demo__progress-btn-result--before" type="button" name="button">Было</button>
+                  <div class="demo__progress-bar">
+                    <span class="demo__progress-toggle"></span>
+                  </div>
+                  <button class="demo__progress-btn-result demo__progress-btn-result--after" type="button" name="button">Стало</button>
+                </div>
             </div>
           </div>
         </div>
@@ -183,7 +187,7 @@
           <div class="footer__contacts-main">
             <div class="footer__contacts-container">
               <div class="footer__contacts-wrapper">
-                <h3 class="footer__contacts-title">Приглашаем <br> к сотрудничеству дилеров!</h3>
+                <h3 class="footer__contacts-title">Приглашаем к&nbspсотрудничеству дилеров!</h3>
                 <div class="footer__contacts-adress">
                   ул. Большая Конюшенная, д. 19/8 <p class="footer__contacts-adress-info">Санкт-Петербург</p>
                 </div>
@@ -195,11 +199,11 @@
               <iframe class="footer__map-js" src="https://yandex.by/map-widget/v1/-/CBqvuIxNcD"></iframe>
             </div>
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
               <img class="footer__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
             </picture>
@@ -209,8 +213,8 @@
       <div class="container">
         <div class="footer__container">
           <div class="footer__logo">
-            <a class="logo__link">
-              <img class="logo__img" src="img/logo-footer.svg" alt="Cat Energy">
+            <a class="footer__logo-link">
+              <img class="footer__logo-img" src="img/logo-footer.svg" alt="Cat Energy">
             </a>
           </div>
 
@@ -218,26 +222,26 @@
             <h2 class="visually-hidden">Социальные сети</h2>
             <div class="socials">
               <ul class="socials__list">
-                <li class="social__item">
-                  <a class="social__link social__link--vk" href="#">
+                <li class="socials__item">
+                  <a class="socials__link socials__link--vk" href="#">
                     <span class="visually-hidden">Вконтакте</span>
-                    <svg class="social__link-img social__link--vk-img" width="23" height="13">
+                    <svg class="socials__link-img socials__link--vk-img" width="23" height="13">
                       <use xlink:href="#icon-vk"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social__item">
-                  <a class="social__link social__link--instagram" href="#">
+                <li class="socials__item">
+                  <a class="socials__link socials__link--instagram" href="#">
                     <span class="visually-hidden">Инстаграм</span>
-                    <svg class="social__link-img social__link--instagram-img" width="17" height="16">
+                    <svg class="socials__link-img socials__link--instagram-img" width="17" height="16">
                       <use xlink:href="#icon-insta"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social__item">
-                  <a class="social__link social__link--facebook" href="#">
+                <li class="socials__item">
+                  <a class="socials__link socials__link--facebook" href="#">
                     <span class="visually-hidden">Фейсбук</span>
-                    <svg class="social__link-img social__link--facebook-img" width="11" height="19">
+                    <svg class="socials__link-img socials__link--facebook-img" width="11" height="19">
                       <use xlink:href="#icon-fb"></use>
                     </svg>
                   </a>
