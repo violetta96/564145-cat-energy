@@ -30,7 +30,7 @@
   margin-bottom: 22px;
 }
 
-.field__item--cat:last-child .field-label {
+.field__item--cat:last-child .field__label {
   width: 94px;
 }
 
@@ -46,7 +46,7 @@
     margin-bottom: 71px;
   }
 
-  .field__item--cat:last-child .field-label {
+  .field__item--cat:last-child .field__label {
     width: 125px;
   }
 }
@@ -56,12 +56,12 @@
     margin-bottom: 0;
   }
 
-  .field__item--cat:last-child .field-label {
+  .field__item--cat:last-child .field__label {
     width: 125px;
   }
 }
 
-.field-label {
+.field__label {
   margin-right: 1px;
 
   font-size: 16px;
@@ -70,23 +70,23 @@
 }
 
 @media (min-width: @tablet-width) {
-  .field-label {
+  .field__label {
     font-size: 20px;
     line-height: 20px;
     margin-right: 17px;
   }
 
-  .field-label--cat-age {
+  .field__label--cat-age {
     margin-right: 8px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .field-label {
+  .field__label {
     margin-right: 17px;
   }
 
-  .field-label--cat-age {
+  .field__label--cat-age {
     margin-right: 8px;
   }
 }
@@ -119,15 +119,15 @@
   }
 }
 
-.field__text:active ~ .field-img {
+.field__text:active ~ .field__img {
   color: #68b738;
 }
 
-.field__text:focus ~ .field-img {
+.field__text:focus ~ .field__img {
   color: #68b738;
 }
 
-.field__text:invalid ~ .field-img {
+.field__text:invalid ~ .field__img {
   color: #ff8282;
 }
 
@@ -196,7 +196,7 @@
   .ul-reset();
 }
 
-.field-label--type {
+.field__label--type {
   .p-reset();
   margin-bottom: 24px;
   padding-left: 45px;
@@ -211,7 +211,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .field-label--type {
+  .field__label--type {
     margin-bottom: 33px;
     padding-left: 60px;
 
@@ -221,12 +221,12 @@
 }
 
 @media (min-width: @desktop-width) {
-  .field-label--type {
+  .field__label--type {
     margin-bottom: 33px;
   }
 }
 
-.field-label--type::before {
+.field__label--type::before {
   position: absolute;
   top: -5px;
   left: 0;
@@ -238,7 +238,7 @@
   border-radius: 50%;
 }
 
-.field-label--type:hover::before {
+.field__label--type:hover::before {
   position: absolute;
   top: -5px;
   left: 0;
@@ -250,7 +250,7 @@
   border-radius: 50%;
 }
 
-.field-label--type:active::before {
+.field__label--type:active::before {
   position: absolute;
   top: -5px;
   left: 0;
@@ -264,21 +264,21 @@
 }
 
 @media (min-width: @tablet-width) {
-  .field-label--type::before {
+  .field__label--type::before {
     top: -9px;
     left: 0;
     width: 38px;
     height: 38px;
   }
 
-  .field-label--type:hover::before {
+  .field__label--type:hover::before {
     top: -9px;
     left: 0;
     width: 38px;
     height: 38px;
   }
 
-  .field-label--type:active::before {
+  .field__label--type:active::before {
     top: -9px;
     left: 0;
     width: 38px;
@@ -286,7 +286,7 @@
   }
 }
 
-.field-radio:checked ~ .field-label--type::after {
+.field__radio:checked ~ .field__label--type::after {
   position: absolute;
   top: 4px;
   left: 9px;
@@ -298,7 +298,7 @@
   border-radius: 50%;
 }
 
-.field-radio:checked ~ .field-label--type:hover::after {
+.field__radio:checked ~ .field__label--type:hover::after {
   position: absolute;
   top: 4px;
   left: 9px;
@@ -310,7 +310,7 @@
   border-radius: 50%;
 }
 
-.field-radio:checked ~ .field-label--type:active::after {
+.field__radio:checked ~ .field__label--type:active::after {
   position: absolute;
   top: 4px;
   left: 9px;
@@ -324,21 +324,21 @@
 }
 
 @media (min-width: @tablet-width) {
-  .field-radio:checked ~ .field-label--type::after {
+  .field__radio:checked ~ .field__label--type::after {
     top: 3px;
     left: 12px;
     width: 17px;
     height: 17px;
   }
 
-  .field-radio:checked ~ .field-label--type:hover::after {
+  .field__radio:checked ~ .field__label--type:hover::after {
     top: 3px;
     left: 12px;
     width: 17px;
     height: 17px;
   }
 
-  .field-radio:checked ~ .field-label--type:active::after {
+  .field__radio:checked ~ .field__label--type:active::after {
     top: 3px;
     left: 12px;
     width: 17px;
@@ -346,15 +346,15 @@
   }
 }
 
-.field-radio:focus ~ .field-label--type {
+.field__radio:focus ~ .field__label--type {
   opacity: 0.3;
 }
 
-.field-radio:checked ~ .field-label--type {
+.field__radio:checked ~ .field__label--type {
   opacity: 1;
 }
 
-.field-radio:focus ~ .field-label--type::before {
+.field__radio:focus ~ .field__label--type::before {
   border-color: @field-dark-color;
 }
 
@@ -394,7 +394,7 @@
   }
 }
 
-.field-label--contacts {
+.field__label--contacts {
   margin-right: -3px;
 }
 
@@ -405,7 +405,7 @@
 
     &::before {
       top: 87px;
-      left: 555px;
+      left: 550px;
       width: 145px;
     }
 
@@ -421,11 +421,11 @@
     }
   }
 
-  .field-label--contacts {
+  .field__label--contacts {
     margin-right: 19px;
   }
 
-  .field__item--contacts-tel .field-label--contacts {
+  .field__item--contacts-tel .field__label--contacts {
     margin-right: 13px;
   }
 }
@@ -448,11 +448,11 @@
     }
   }
 
-  .field__item--contacts-tel .field-label--contacts {
+  .field__item--contacts-tel .field__label--contacts {
     margin-right: 13px;
   }
 
-  .field-label--contacts {
+  .field__label--contacts {
     margin-right: 19px;
   }
 }
@@ -468,7 +468,7 @@
   }
 }
 
-.field-mail-img {
+.field__img--mail {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -477,7 +477,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .field-mail-img {
+  .field__img--mail {
     width: 19px;
     height: 14px;
     top: 20px;
@@ -486,7 +486,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .field-mail-img {
+  .field__img--mail {
     width: 19px;
     height: 14px;
     top: 19px;
@@ -504,7 +504,7 @@
   }
 }
 
-.field-tel-img {
+.field__img--tel {
   position: absolute;
   top: 13px;
   right: 13px;
@@ -513,7 +513,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .field-tel-img {
+  .field__img--tel {
     top: 18px;
     right: 12px;
     width: 20px;
@@ -522,7 +522,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .field-tel-img {
+  .field__img--tel {
     top: 18px;
     right: 18px;
     width: 20px;
@@ -553,7 +553,7 @@
 
     &::before {
       top: 67px;
-      left: 220px;
+      left: 215px;
       width: 480px;
     }
 
@@ -631,7 +631,7 @@
   &::before {
     position: absolute;
     top: 28px;
-    right: -160px;
+    right: -159px;
     width: 137px;
     height: 3px;
     content: "";
@@ -647,7 +647,7 @@
 
     &::before {
       top: 68px;
-      left: 253px;
+      left: 250px;
       width: 445px;
     }
 
@@ -710,7 +710,7 @@
   }
 }
 
-.field-label--add {
+.field__label--add {
   .p-reset();
   margin-bottom: 24px;
   padding-left: 45px;
@@ -723,20 +723,20 @@
 }
 
 @media (min-width: @tablet-width) {
-  .field-label--add {
+  .field__label--add {
     margin-bottom: 52px;
     padding-left: 60px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .field-label--add {
+  .field__label--add {
     margin-bottom: 52px;
     padding-left: 58px;
   }
 }
 
-.field-label--add::before {
+.field__label--add::before {
   position: absolute;
   top: -5px;
   left: 0;
@@ -747,7 +747,7 @@
   border: 1px solid @border-color;
 }
 
-.field-label--add:hover::before {
+.field__label--add:hover::before {
   position: absolute;
   top: -5px;
   left: 0;
@@ -758,7 +758,7 @@
   border: 1px solid @border-darker-color;
 }
 
-.field-label--add:active::before {
+.field__label--add:active::before {
   position: absolute;
   top: -5px;
   left: 0;
@@ -770,32 +770,32 @@
 }
 
 @media (min-width: @tablet-width) {
-  .field-label--add::before {
+  .field__label--add::before {
     top: -8px;
     width: 37px;
     height: 37px;
   }
 
-  .field-label--add:hover::before {
+  .field__label--add:hover::before {
     top: -8px;
     width: 37px;
     height: 37px;
   }
 
-  .field-label--add:focus::before {
+  .field__label--add:focus::before {
     top: -8px;
     width: 37px;
     height: 37px;
   }
 
-  .field-label--add:active::before {
+  .field__label--add:active::before {
     top: -8px;
     width: 37px;
     height: 37px;
   }
 }
 
-.field-check:checked ~ .field-label--add::after {
+.field__check:checked ~ .field__label--add::after {
   position: absolute;
   top: 2px;
   left: 5px;
@@ -806,7 +806,7 @@
   background: url("../img/icon-tick.svg") no-repeat 0 0;
 }
 
-.field-check:checked ~ .field-label--add:hover::after {
+.field__check:checked ~ .field__label--add:hover::after {
   position: absolute;
   top: 2px;
   left: 5px;
@@ -817,7 +817,7 @@
   background: url("../img/icon-tick.svg") no-repeat 0 0;
 }
 
-.field-check:checked ~ .field-label--add:active::after {
+.field__check:checked ~ .field__label--add:active::after {
   position: absolute;
   top: 2px;
   left: 5px;
@@ -829,25 +829,25 @@
 }
 
 @media (min-width: @tablet-width) {
-  .field-check:checked ~ .field-label--add::after {
+  .field__check:checked ~ .field__label--add::after {
     left: 8px;
     width: 22px;
     height: 16px;
   }
 
-  .field-check:checked ~ .field-label--add:hover::after {
+  .field__check:checked ~ .field__label--add:hover::after {
     left: 8px;
     width: 22px;
     height: 16px;
   }
 
-  .field-check:checked ~ .field-label--add:active::after {
+  .field__check:checked ~ .field__label--add:active::after {
     left: 8px;
     width: 22px;
     height: 16px;
   }
 }
 
-.field-check:focus ~ .field-label--add::before {
+.field__check:focus ~ .field__label--add::before {
   border-color: @field-dark-color;
 }
